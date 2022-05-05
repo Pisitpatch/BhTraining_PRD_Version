@@ -1,0 +1,125 @@
+﻿<%@ Master Language="VB" CodeFile="Star_MasterPage.master.vb" Inherits="star_Star_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Star of bumrungrad : Bumrungrad Information System</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />
+        <link href="../css/main_star.css" rel="stylesheet" type="text/css" />
+ <link href="../css/popup.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/jquery-1.6.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="../js/akmodal/dimmer.js"></script>
+<script type="text/javascript" src="../js/akmodal/dimensions.pack.js"></script>
+<script type="text/javascript" src="../js/akmodal/akModal.js"></script>
+ <script type="text/javascript" src="../js/check_session.js" charset="utf-8"></script>
+ <script type ="text/javascript">
+     my_window = null;
+     function check() {
+         if (my_window && !my_window.closed)
+             my_window.focus();
+     }
+ </script>
+     <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="pageheader"><a href="../menu.aspx"><img src="../images/Bumrungrad-Hospital-Logo.gif" border="0" alt="logo" width="196" height="82" /></a></div>
+<div id="topbar"><table width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="30"><div  id="topmenu"><div style="color:White">Login :  
+        <asp:Label ID="lblInfo" runat="server" Text="x"></asp:Label>
+        <strong>Department</strong>  <asp:Label ID="lblDeptName" runat="server" Text="x"></asp:Label>
+         <strong>Cost Center</strong>  <asp:Label ID="lblCostcenter" runat="server" Text="x"></asp:Label>
+        </div>
+    </div></td>
+    <td width="150" align="right">
+        <asp:LinkButton ID="linkLogout" runat="server" CausesValidation="False">Log out >></asp:LinkButton>&nbsp;&nbsp;</td>
+  </tr>
+</table>
+
+</div>
+<div class="spacer"></div>
+<div id="pathway"><asp:SiteMapPath ID="SiteMapPath1" runat="server">  </asp:SiteMapPath></div>
+   <div id="container">
+   
+   <div id="Div1">
+  <table width="100%" cellspacing="0" cellpadding="0">
+    <tr>
+      <td valign="top" class="style1">
+    <div id="sidemenu12" class="sidemenu">
+          <ul>
+            <li style="border-top: none;"><strong>Star of Bumrungrad</strong></li>
+            <li style="border-top: none;">- <a href="star_message.aspx"> News & Events</a></li>
+            
+             <li style="border-top: none;"><a href="home.aspx">-  Check Status</a></li>
+              <li style="border-top: none;"><a href="form_star.aspx?mode=add">-  Submit Star</a></li>
+              <li style="border-top: none;"><a href="home.aspx?viewtype=nominee">-  My Star Record</a></li>
+          </ul>
+         <br /> 
+      </div>
+        <br />
+        <div id="div_manager" class="sidemenu" runat="server" >
+            <ul>
+              <li style="border-top: none;"><strong><a href="javascript:void;">Sup./Mgr./DD.</a></strong></li>
+              <li style="border-top: none;">- <a href="home.aspx?viewtype=readonly">Review Star of BI</a></li>
+             <li style="border-top: none;">- <a href="star_report2.aspx?viewtype=readonly">Report Summaries</a></li> 
+              </ul>
+              <br />
+              </div>
+       <br />
+        <div id="div_hr" class="sidemenu" runat="server" >
+            <ul>
+              <li style="border-top: none;"><strong><a href="javascript:void;">Star Coordinator</a></strong></li>
+              <li style="border-top: none;">- <a href="home.aspx?viewtype=hr">Review Star of BI</a></li>
+              <li style="border-top: none;">- <a href="star_master.aspx">Setting</a></li>
+              <li style="border-top: none;">- <a href="star_report.aspx">Report Summaries</a></li> 
+              </ul>
+             <br /> 
+              </div><br />
+        <div id="div_dept" class="sidemenu" runat="server" visible="false">
+        <ul>
+              <li style="border-top: none;"><strong><a href="javascript:void;">Chair of Star Committee</a></strong></li>
+                            <li style="border-top: none;">- <a href="home.aspx?viewtype=sup">Review Star of BI</a></li>
+              <li style="border-top: none;">- <a href="#">Report </a>Summaries</li>
+            
+              </ul> 
+                <br />
+              </div><br />
+        <div id="div_committee" class="sidemenu" runat="server" visible="false"><ul>
+              <li style="border-top: none;"><span style="font-weight: bold"> <a href="javascript:void;">Star Committee</a></span></li>
+                  <li style="border-top: none;"><a href="form_star.aspx?mode=add&flag=com">-  Submit and Review Star</a></li>
+                            <li style="border-top: none;">- <a href="home.aspx?viewtype=com">Review Star of BI</a></li>
+              <li style="border-top: none;">- <a href="#">Report Summaries</a></li>
+            </ul><br /> 
+        </div>
+       
+        
+        <br /></td>
+      <td align="center" valign="top"> 
+       <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">  
+        </asp:ContentPlaceHolder>   
+      
+       </td>
+    </tr>
+  </table>
+</div>
+
+  
+        
+    </div>
+    <div id="footer"></div>
+     <div id="backgroundPopup"></div>
+    </form>
+</body>
+</html>

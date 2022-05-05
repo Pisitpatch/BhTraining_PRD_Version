@@ -1,0 +1,13 @@
+ตาราง cfb_detail_tab เพิ่ม column
+- new_dept_relate_name , nvarchar(100)
+- new_safe_goal , nvarchar(100)
+- new_payor , nvarchar(100)
+- new_issue , nvarchar(100)
+- new_severe_id  , smallint
+- new_clinical_type  , smallint
+
+ตาราง ir_detail_tab เพิ่ม column
+- new_dept_relate_name , nvarchar(100)
+- new_safe_goal , nvarchar(100)
+- new_payor , nvarchar(100)
+- new_issue , nvarchar(100)

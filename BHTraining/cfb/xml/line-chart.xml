@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lineChart>
+<config>
+<chartarea x="50" y="50" width="400" height="200" backColor1="0xfafafa" backColor2="0xf1f1f1" xMargin="20" borderColor="0xbdbdbd" borderThick="2" borderAlpha="1" />
+<yaxis tagSize="8" tagColor="0x587b8c" tagMargin="3" min="0" max="90" intervals="5" decimals="1" />
+<xaxis tagSize="8" tagColor="0x587b8c" tagMargin="1" />
+<gridlines thick="1" color="0xcdcdcd" alpha="0.8" />
+<legends visible="true" x="480" y="50" width="120" square="10" textSize="12" textColor="0x5e7086" backColor="0xFFFFFF" backAlpha="1" borderColor="0x587b8c" borderThick="1" borderAlpha="1" legendBackColor="0xf2f2f2" />
+<points radius="3" />
+<tooltip size="10" xmargin="2" ymargin="0" />
+<animation openTime="0.5" moveTime="0.5" synchronized="false" />>
+</config>
+<texts>
+<paragraph align="center" bold="true" color="0x000066" size="12" x="45" y="10" width="500" text="Total Number of Customer Feedback By Service Type" />
+<paragraph align="center" bold="false" color="0x000066" size="10" x="45" y="30" width="500" text="From 30 March 2022 to 29 April 2022"  />
+</texts>
+<series>
+<serie lineColor="0x00AA00" thick="1" pointInteriorColor="0x55FF55" pointBorderColor="0x00AA00" tooltipBackColor="0x55FF55" tooltipTextColor="0x000000" name="OPD" />
+<serie lineColor="0xf99d39" thick="1" pointInteriorColor="0xfbc891" pointBorderColor="0xf99d39" tooltipBackColor="0xfbc891" tooltipTextColor="0x000000" name="IPD" />
+<serie lineColor="0x000066" thick="1" pointInteriorColor="0x000099" pointBorderColor="0x000066" tooltipBackColor="0x0000AA" tooltipTextColor="0xFFFFFF" name="Not specified" />
+<serie lineColor="0xDD0000" thick="2" pointInteriorColor="0xFF3333" pointBorderColor="0xDD0000" tooltipBackColor="0xFF3333" tooltipTextColor="0xFFFFFF" name="Total IR" />
+</series>
+<periods>
+<period name="30">
+<v>14</v>
+<v>6</v>
+<v>0</v>
+<v>20</v>
+</period>
+<period name="31">
+<v>10</v>
+<v>2</v>
+<v>0</v>
+<v>12</v>
+</period>
+<period name="1">
+<v>24</v>
+<v>4</v>
+<v>0</v>
+<v>28</v>
+</period>
+<period name="2">
+<v>1</v>
+<v>0</v>
+<v>0</v>
+<v>1</v>
+</period>
+<period name="3">
+<v>2</v>
+<v>3</v>
+<v>0</v>
+<v>5</v>
+</period>
+<period name="4">
+<v>38</v>
+<v>9</v>
+<v>0</v>
+<v>47</v>
+</period>
+<period name="5">
+<v>21</v>
+<v>6</v>
+<v>0</v>
+<v>27</v>
+</period>
+<period name="6">
+<v>3</v>
+<v>1</v>
+<v>0</v>
+<v>4</v>
+</period>
+<period name="7">
+<v>15</v>
+<v>4</v>
+<v>0</v>
+<v>19</v>
+</period>
+<period name="8">
+<v>24</v>
+<v>8</v>
+<v>0</v>
+<v>32</v>
+</period>
+<period name="9">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="10">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="11">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="12">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="13">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="14">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="15">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="16">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="17">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="18">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="19">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="20">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="21">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="22">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="23">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="24">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="25">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="26">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="27">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="28">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="29">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+</periods>
+</lineChart>

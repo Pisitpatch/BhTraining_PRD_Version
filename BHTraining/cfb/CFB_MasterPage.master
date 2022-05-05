@@ -1,0 +1,124 @@
+﻿<%@ Master Language="VB" CodeFile="CFB_MasterPage.master.vb" Inherits="cfb.cfb_CFB_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Customer feedback : Bumrungrad Information System</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../css/main.css" rel="stylesheet" type="text/css" />
+        <link href="../css/popup.css" rel="stylesheet" type="text/css" />
+   <script type="text/javascript" src="../js/jquery-1.6.min.js" charset="utf-8"></script>
+   <script type="text/javascript" src="../js/check_session.js" charset="utf-8"></script>
+ <script type ="text/javascript">
+     my_window = null;
+     function check() {
+         if (my_window && !my_window.closed)
+             my_window.focus();
+     }
+ </script>
+     <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="pageheader"><a href="../menu.aspx"><img src="../images/Bumrungrad-Hospital-Logo.gif" border="0" alt="logo" width="196" height="82" /></a></div>
+<div id="topbar"><table width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="30"><div  id="topmenu"><div style="color:White">Login :  
+        <asp:Label ID="lblInfo" runat="server" Text="x"></asp:Label>
+        <strong>Department</strong>  <asp:Label ID="lblDeptName" runat="server" Text="x"></asp:Label>
+         <strong>Cost Center</strong>  <asp:Label ID="lblCostcenter" runat="server" Text="x"></asp:Label>
+        </div>
+    </div></td>
+    <td width="150" align="right">
+        <asp:LinkButton ID="linkLogout" runat="server" CausesValidation="False">Log out >></asp:LinkButton>&nbsp;&nbsp;</td>
+  </tr>
+</table>
+
+</div>
+<div class="spacer"></div>
+<div id="pathway"><asp:SiteMapPath ID="SiteMapPath1" runat="server">  </asp:SiteMapPath></div>
+   <div id="container">
+   
+   <div id="Div1">
+  <table width="100%" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="180" valign="top">
+      <div class="sidemenu" id="panel_user" runat="server" >
+          <ul>
+            <li style="border-top: none;"><a href="home.aspx"><strong>Report Customer Feedback</strong></a></li>
+         
+            <li style="border-top: none;"><a href="form_cfb.aspx?mode=add&viewtype=add">- New Customer Feedback</a></li>
+             <li style="border-top: none;"><a href="cfb_contactus.aspx">- Contact Us</a></li>
+          </ul>
+        </div>
+        <br />
+        <div class="sidemenu" id="panel_dept" runat="server">
+          <ul>
+            <li style="border-top: none;"><a href="javascript:;"><strong>Sup/Mgr/Dept Mgr/Director</strong></a></li>
+            <li><a href="home.aspx?viewtype=dept">- Review Customer Feedback</a></li>
+               <li><a href="home.aspx?viewtype=dept&flag=update">- Information Update</a></li>
+          </ul>
+        </div>
+         <%If panel_dept.Visible = True Then%><br /><%end if %>
+          <div class="sidemenu" id="panel_logbook" runat="server">
+          <ul>
+            <li style="border-top: none;"><a href="javascript:;"><strong>Sup. Admin</strong></a></li>
+            <li><a href="logbook.aspx">- View Log Book</a></li>
+            
+          </ul>
+          
+        </div>
+          <%If panel_logbook.Visible = True Then%><br /><%end if %>
+        <div class="sidemenu" id="panel_tqm" runat="server">
+          <ul>
+            <li style="border-top: none;"><a href="javascript:;"><strong>IR&CFB</strong></a></li>
+            <li><a href="home.aspx?viewtype=tqm">- Review Customer Feedback</a></li>
+              <li><a href="report_cfb.aspx?viewtype=tqm">- CFB Summary Report</a></li>
+          </ul>
+        </div>
+        <br/>
+        <div class="sidemenu" id="panel_psm" runat="server">
+          <ul>
+            <li style="border-top: none;"><a href="javascript:;"><strong>Risk Management</strong></a></li>
+            <li><a href="home.aspx?viewtype=psm">- Review Customer Feedback</a></li>
+          </ul>
+        </div>
+        <br />
+         <div class="sidemenu" id="panel_ha" runat="server">
+          <ul>
+            <li style="border-top: none;"><a href="#"><strong>View Customer Feedback</strong></a></li>
+            <li><a href="home.aspx?viewtype=ha">- CFB Report List</a></li>
+               <li><a href="home.aspx?viewtype=ha&flag=update">- Information update</a></li>
+            <li><a href="report_cfb.aspx">- CFB Summary Report</a></li>
+          </ul>
+        </div>
+        <br />
+   <div class="sidemenu" id="panel_admin" runat="server">
+          <ul>
+            <li style="border-top: none;"><a href="#"><strong>System Setting</strong></a></li>
+            <li><a href="../incident/topic_management.aspx?topic_type=cfb">- Topic Management</a></li>
+                <li><a href="../incident/unit_management.aspx">- Unit Management</a></li>
+             <li><a href="../incident/volumn_management.aspx?topic_type=ir">- Paitent Volumn</a></li>
+          </ul>
+        </div>
+           <br />
+</td>
+      <td align="center" valign="top"> 
+       <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">  
+        </asp:ContentPlaceHolder>   
+      
+       </td>
+    </tr>
+  </table>
+</div>
+    </div>
+      <div id="backgroundPopup"></div>
+    <div id="footer"></div>
+
+    </form>
+</body>
+</html>
+
+

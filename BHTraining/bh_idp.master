@@ -1,0 +1,57 @@
+﻿<%@ Master Language="VB" CodeFile="bh_idp.master.vb" Inherits="bh_idp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bumrungrad Information System</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="pageheader"><a href="menu.aspx"><img src="images/Bumrungrad-Hospital-Logo.gif" border="0" alt="logo" width="196" height="82" /></a></div>
+<div id="topbar"><table width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="30"><div  id="topmenu"><div><a href="idp_req_training_list.aspx">Individual Development Plan</a></div>
+    <div><a href="#">Staff Suggestion & Innovation Program</a></div>
+    <div><a href="#">Incident Report</a></div>
+	<div><a href="#">Customer Feedback</a></div>
+	<div><a href="user_management.aspx">User Management</a></div>
+    </div></td>
+    <td width="150" align="right"><a href="login.aspx">Sign in&nbsp;&gt;&gt;</a>&nbsp;&nbsp;</td>
+  </tr>
+</table>
+
+</div>
+<div class="spacer"></div>
+<div id="pathway"><a href="#">Main</a>&nbsp;>&nbsp;<a href="#">Individal Development Plan</a>&nbsp;&gt;&nbsp;</div>
+    <div id="container">
+    <table width="100%"><tr>
+    <td width="180" style="vertical-align:top">
+    <div id="sidemenu">
+    <ul>
+      <li style="border-top: none;"><a href="index.html">Training Needs Survey</a></li>
+      <li><a href="training_request_stat.html">Training Needs Summary</a></li>
+      <li><a href="training_document.html"> Training Document</a></li>
+        <li><a href="user_management.aspx"> User Management</a></li>
+      </ul>
+      </div>
+    
+    </td>
+    
+    <td style="vertical-align:top">
+      <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </td>
+    </tr>
+    </table>
+   
+     
+        
+    </div>
+    <div id="footer"></div>
+    </form>
+</body>
+</html>

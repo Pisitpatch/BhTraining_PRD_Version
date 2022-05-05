@@ -1,0 +1,177 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body {margin: 0px;}
+
+body, td{font-family: 'Segoe UI', Arial, Tahoma; font-size: 10pt; color: #333; text-align: left;}
+th {font-family: 'Segoe UI', Arial, Tahoma; font-size: 10pt;  text-align: left;}
+
+textarea {font-family: 'Segoe UI', Arial, Tahoma; }
+
+a:link, a:visited {color: #338987; text-decoration: none;}
+
+a:hover {color: #338987; text-decoration: underline;}
+
+.spacer {clear: both;}
+
+.small {font-size: 11px;}
+
+.digit {text-align: right; padding-right: 10px;}
+
+.red {color: #C30;}
+
+.green {color: #090;}
+
+#pageheader {background: url(../images/top_bg.gif) repeat-x;}
+
+/*#topbar {background: #11720c; height: 30px;}*/
+#topbar {background: #38c038; height: 30px;}
+
+
+#topbar a {color: #FFF;}
+
+#topmenu {}
+
+#topmenu div {float: left; padding: 5px 15px; border-right: solid 1px #abbbb4;}
+
+#topmenu a:link, #topmenu a:visited {color: #abbbb4; font-size: 11px;}
+
+#topmenu a:hover, #topmenu a:active {color: #FFF; text-decoration: none;}
+
+.sidemenu ul {margin: 0px; padding: 0px;background: #38c038; }
+
+.sidemenu ul li {display: block; padding: 5px 5px 5px 10px; color: #FFF; font-size: 11px; border-top: solid 1px #c3eaa8;  border-bottom: solid 1px #4a9a12;}
+
+.sidemenu ul li a{list-style: none; padding: 0px 0px 0px 0px; color: #FFF; font-size: 11px;}
+.sidemenu ul li a:visited {list-style: none; padding: 0px 0px 0px 0px; color: #FFF; font-size: 11px;}
+.sidemenu ul li a:hover {list-style: none; padding: 0px 0px 0px 0px; color: #FFF; font-size: 11px;}
+
+#pathway {font-size: 11px; padding: 5px 15px; color: #888;}
+
+#pathway a {color: #888;}
+
+#container {margin: 0px 0px 15px 0px;}
+
+#footer {background: #c7d2da; height: 36px; border-bottom: solid 2px #abb8c2;}
+
+.warning {background: #ffdddd; border: solid 2px #990000; color: red; padding: 3px 6px; font-weight: bold; margin-bottom: 10px;}
+
+.remark {background: #fff7d7; border: solid 2px #fad163; color: red; padding: 3px 6px; margin-bottom: 10px;}
+
+.button-green {background: #0a5d53; border: solid 1px #24928f; color: #FFF; font-size: 11px; padding: 3px 15px;}
+
+.button-green2 {background: #e6eff9; border: solid 1px #406c67; color: #406c67; font-size: 11px; padding: 2px 15px;}
+
+#signin {}
+
+#signin th {background: #409997; color: #FFF; font-weight: normal; font-size: 16px; text-align: left; padding: 6px 10px;}
+
+#header {/*color: #788991;*/ color: #000; font-size: 18px; font-weight: bold; padding: 10px 15px;}
+
+#data , #data2 {padding: 10px 15px;}
+
+.tdata {border: ridge 1px #E1E1E1; border-collapse: collapse;}
+
+.tdata td.colname {border: inset 1px #808080; background-color: #E1E1E1; text-align: center;}
+
+.tdata th.colname {border: inset 1px #808080; background-color: #E1E1E1; text-align: center;}
+
+.tdata tr.colname th {border: inset 1px #808080; background-color: #E1E1E1; text-align: center;}
+
+
+.tdata td {border: solid 1px #e8e8e8;}
+
+.tdata td td {border: none;}
+
+.tdata3 {border: solid 1px #abbbb4;}
+
+.tdata3 .theader {background: #abbbb4; color: #FFF; font-weight: bold;}
+
+.style1 {font-size: 14pt; font-weight: bold;}
+
+.modalBackground{
+
+  background-color:#CCCCFF;
+
+  filter:alpha(opacity=40);
+
+  opacity:0.5;
+
+}
+
+.ModalWindow{
+
+  border: solid 1px #c0c0c0;
+
+  background:#f0f0f0;
+
+  padding: 10px 10px 10px 10px;
+
+  position:absolute;
+
+  top:-1000px;
+
+}
+
+.statheader {color: #000; font-weight: bold; font-size: 16px; text-align: center; margin-top: 4px; margin-bottom: 8px;}
+
+.statdesc {color: #000; font-weight: bold; padding: 5px 10px;}
+
+.statinfo {font-weight: normal}
+
+.statchart {}
+
+.stattable {}
+
+.stattable td {vertical-align: top;}
+
+.stattable .dataHeader {background: #CCC; color: #000; font-weight: bold; }
+
+.stattable .row1 {}
+
+.stattable .row2 {background: #EAEAEA;}
+
+.irReport {font-family:  Arial Unicode, Arial, Tahoma; font-size: 11px; width: 20cm; line-height: 1.8em;}
+
+.irReport td {font-family:  Arial Unicode, Arial, Tahoma; font-size: 11px; line-height: 1.8em; vertical-align: top;}
+
+.irReportHeader {text-align: center; font-size: 16px; font-weight: bold; line-height: 2em;}
+
+.irReportNo {margin: 10px 0px 10px 0px; }
+
+.under {text-decoration: underline;}
+
+.underdot {border-bottom: dotted 2px #000;}
+
+.udleft {border-bottom: dotted 1px #000; text-align: left;  padding: 0px 15px; }
+
+.udcenter {border-bottom: dotted 1px #000; text-align: center;}
+
+.txtborder {border: solid 1px #000; padding: 0px 5px; min-height: 100px;}
+
+.irReporttbl {border-collapse: collapse;}
+
+.irReporttbl td {border: solid 1px #000;}
+
+.irReport .tblHeader {text-align: center;}
+
+.irReport .indent {padding-left: 30px; padding-right: 15px;}
+
+.comment {}
+
+.alert {width: 800px; height: 600px;}
+
+.alert .heading {font-weight: bold; font-size: 15px; padding: 5px 10px; background: #dbe6e3; color: #006c69;}
+
+.cfbtxtborder {border: solid 1px #000; padding: 0px 5px; min-height: 50px;}
+
+.mycursor{ cursor:pointer;}
+
+.gvHeaderRow{
+background-image:url(../images/gradient.gif);
+}
+
+.popupTable
+{
+    border-bottom: solid 3px #81aeb1;
+}

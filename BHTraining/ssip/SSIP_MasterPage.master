@@ -1,0 +1,128 @@
+﻿<%@ Master Language="VB" CodeFile="SSIP_MasterPage.master.vb" Inherits="ssip_SSIP_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Staff Suggestion Innovation Program : Bumrungrad Information System</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../css/main.css" rel="stylesheet" type="text/css" />
+ <link href="../css/popup.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/jquery-1.6.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="../js/akmodal/dimmer.js"></script>
+<script type="text/javascript" src="../js/akmodal/dimensions.pack.js"></script>
+<script type="text/javascript" src="../js/akmodal/akModal.js"></script>
+ <script type="text/javascript" src="../js/check_session.js" charset="utf-8"></script>
+ <script type ="text/javascript">
+     my_window = null;
+     function check() {
+         if (my_window && !my_window.closed)
+             my_window.focus();
+     }
+ </script>
+     <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="pageheader"><a href="../menu.aspx"><img src="../images/Bumrungrad-Hospital-Logo.gif" border="0" alt="logo" width="196" height="82" /></a></div>
+<div id="topbar"><table width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="30"><div  id="topmenu"><div style="color:White">Login :  
+        <asp:Label ID="lblInfo" runat="server" Text="x"></asp:Label>
+        <strong>Department</strong>  <asp:Label ID="lblDeptName" runat="server" Text="x"></asp:Label>
+         <strong>Cost Center</strong>  <asp:Label ID="lblCostcenter" runat="server" Text="x"></asp:Label>
+        </div>
+    </div></td>
+    <td width="150" align="right">
+        <asp:LinkButton ID="linkLogout" runat="server">Log out >></asp:LinkButton>&nbsp;&nbsp;</td>
+  </tr>
+</table>
+
+</div>
+<div class="spacer"></div>
+<div id="pathway"><asp:SiteMapPath ID="SiteMapPath1" runat="server">  </asp:SiteMapPath></div>
+   <div id="container">
+   
+   <div id="Div1">
+  <table width="100%" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="180" valign="top">
+       <div class="sidemenu" id="Div2" runat="server" >
+          <ul>
+                           
+             <li style="border-top: none;"><strong>SSIP Program</strong></li>
+            <li style="border-top: none;">- <a href="ssip_objective.aspx">Objective &amp; rule</a></li>
+            <li style="border-top: none;">- <a href="ssip_message.aspx">Definition of Innovation</a></li>
+               <li style="border-top: none;">- <a href="ssip_committee.aspx">Innovation Committee</a></li>
+                  <li style="border-top: none;">- <a href="ssip_champion.aspx">Innovation Champion</a></li>
+			 <li style="border-top: none;">- <a href="ssip_contactus.aspx">Contact Us</a></li>
+          </ul>
+           <br />
+        </div>
+       
+      <div class="sidemenu" id="panel_user" runat="server" >
+          <ul>
+                            
+        <li style="border-top: none;"><strong>Suggestions &amp; Innovations</strong></li>
+              <li style="border-top: none;">- <a href="form_ssip.aspx?mode=add&viewtype=add">Submit My Ideas</a></li>
+              <li style="border-top: none;">- <a href="home.aspx">Check Status</a></li>
+              
+            <!--  <li style="border-top: none;">- <a href="ssipranking.html"> Awards</a></li> -->
+              <li style="border-top: none;">- <a href="ssip_reserve_room.aspx">Reservation Room</a></li>
+            <!--  <li style="border-top: none;">- <a href="ssip_activity.aspx">Activities Record</a></li> -->
+                <li style="border-top: none;">- <a href="home.aspx?flag=activity">Activities Record</a></li>
+          </ul>
+          <br />
+        </div>
+        
+        <div class="sidemenu" id="panel_hr" runat="server">
+          <ul>
+            <li style="height: 13px; border-top-style: none; border-top-color: inherit; border-top-width: medium;"><strong>SSIP Coordinator</strong></li>
+             <li style="border-top: none;">- <a href="home.aspx?viewtype=hr">Review Staff Suggestion</a></li>
+              <li style="border-top: none;">- <a href="ssip_master.aspx">Setting master data</a></li>
+                <li style="border-top: none;">- <a href="report_ssip.aspx?viewtype=hr">Report</a></li>
+          </ul>
+          <br />
+        </div>
+             
+              <div class="sidemenu" id="panel_manager" runat="server">
+          <ul>
+            <li style="border-top: none;"><strong>Sup/Mgr/Dept Mgr/DD</strong></li>
+              <li style="border-top: none;">- <a href="home.aspx?viewtype=sup">Review Staff Suggestion</a></li>
+               <li style="border-top: none;">- <a href="report_ssip.aspx?viewtype=dept">Report</a></li>
+          </ul>
+          <br />
+        </div>
+
+         <div class="sidemenu" id="panel_commitee" runat="server">
+          <ul>
+            <li style="border-top: none;"><strong>Innovation Committee</strong></li>
+            
+              <li style="border-top: none;">- <a href="home.aspx?viewtype=com">Review Staff Suggestion</a></li>
+          </ul>
+          <br />
+        </div>
+        <br />
+        
+        <br /></td>
+      <td align="center" valign="top"> 
+       <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">  
+        </asp:ContentPlaceHolder>   
+      
+       </td>
+    </tr>
+  </table>
+</div>
+
+  
+        
+    </div>
+    <div id="footer"></div>
+     <div id="backgroundPopup"></div>
+    </form>
+</body>
+</html>
+
+
+

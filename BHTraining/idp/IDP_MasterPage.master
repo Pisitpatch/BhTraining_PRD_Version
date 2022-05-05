@@ -1,0 +1,186 @@
+﻿<%@ Master Language="VB" CodeFile="IDP_MasterPage.master.vb" Inherits="idp_IDP_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> Individual Development Plan : Bumrungrad Information System</title>
+<link href="../css/main_idp.css" rel="stylesheet" type="text/css" />
+<link href="../css/popup.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body, td,th,div,li,ul,input,select,textarea{font-family:"Century Gothic", Courier, monospace ; font-size:14px}
+
+#topbar {background: #e2ccba; height: 30px;}
+#topmenu div {float: left; padding: 5px 15px; border-right: solid 1px #e2ccba;}
+.button-green {background: #0a5d53; border: solid 1px #24928f; color: #FFF; font-size: 14px; padding: 3px 15px;}
+.button-green2 {background: #e6eff9; border: solid 1px #406c67; color: #406c67; font-size: 14px; padding: 2px 15px;}
+.small {font-size: 16px;}
+.sidemenu ul li {display: block; padding: 5px 5px 5px 10px; color: #FFF; font-size: 14px; border-top: solid 1px #e7e7e7;  border-bottom: solid 1px #103e6b;}
+
+.sidemenu ul li a{list-style: none; padding: 0px 0px 0px 0px; color: #FFF; font-size: 14px;}
+.sidemenu ul li a:visited {list-style: none; padding: 0px 0px 0px 0px; color: #FFF; font-size: 14px;}
+.sidemenu ul li a:hover {list-style: none; padding: 0px 0px 0px 0px; color: #FFF; font-size: 14px;}
+
+.sidemenu ul.color2 {margin: 0px; padding: 0px;background: #d1aa2f;}
+
+.sidemenu ul.color2 li {display: block; padding: 5px 5px 5px 10px; color: #FFF; font-size: 14px; border-top: solid 1px #f7f7f6;  border-bottom: solid 1px #9d822c;}
+
+.sidemenu ul.color2 li a{list-style: none; padding: 0px 0px 0px 0px; color: #FFF; font-size: 14px;}
+.sidemenu ul.color2 li a:visited {list-style: none; padding: 0px 0px 0px 0px; color: #FFF; font-size: 14px;}
+.sidemenu ul.color2 li a:hover {list-style: none; padding: 0px 0px 0px 0px; color: #FFF; font-size: 14px;}
+
+#pathway {font-size: 14px; padding: 5px 15px; color: #999;}
+
+</style>
+  <script type="text/javascript" src="../js/jquery-1.4.2.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="../js/akmodal/dimmer.js"></script>
+<script type="text/javascript" src="../js/akmodal/dimensions.pack.js"></script>
+<script type="text/javascript" src="../js/akmodal/akModal.js"></script>
+ <script type="text/javascript" src="../js/check_session.js" charset="utf-8"></script>
+ <script type ="text/javascript">
+     my_window = null;
+     function check() {
+         if (my_window && !my_window.closed)
+             my_window.focus();
+     }
+ </script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onclick="check();"  >
+    <form id="form1" runat="server">
+    <div id="pageheader"><a href="../menu.aspx"><img src="../images/Bumrungrad-Hospital-Logo.gif" border="0" alt="logo" width="196" height="82" /></a></div>
+<div id="topbar"><table width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="30"><div  id="topmenu"><div style="color:White">Login :  
+        <asp:Label ID="lblInfo" runat="server" Text="x"></asp:Label>
+        <strong>Department</strong>  <asp:Label ID="lblDeptName" runat="server" Text="x"></asp:Label>
+         <strong>Cost Center</strong>  <asp:Label ID="lblCostcenter" runat="server" Text="x"></asp:Label>
+        </div>
+    </div></td>
+    <td width="150" align="right">
+        <asp:LinkButton ID="linkLogout" runat="server">Log out >></asp:LinkButton>&nbsp;&nbsp;</td>
+  </tr>
+</table>
+
+</div>
+<div class="spacer"></div>
+<div id="pathway"><asp:SiteMapPath ID="SiteMapPath1" runat="server">  </asp:SiteMapPath></div>
+   <div id="container">
+   
+   <div id="Div1">
+  <table width="100%" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="180" valign="top">
+      <div class="sidemenu" id="panel_user" runat="server" >
+          <ul style="background-color:#008272">
+            <li style="border-top: none; color:Black; font-style:italic"><strong>Individual Development Plan</strong></li>
+            <li><a href="idp_message2.aspx?id=2" style="color:Black">- My Development Plan (IDP)</a></li>
+              <!--
+              <li><a href="home.aspx?flag=ladder">- My Nursing Clinical Ladder </a></li>
+            <!--
+            <li><a href="idp_nurse_detail_view.html">- Nursing Ladder</a></li>
+             -->  
+            
+          
+             </ul>
+             <br />
+             <ul style="background-color:#b5aa59; ">
+            <li style="color:black; font-style:italic"><strong> Internal Training</strong> </li> 
+           <li><a href="idp_training_calendar.aspx?flag=register" style="color:black">- Pre-Registration</a></li>
+            <li><a href="idp_training_calendar.aspx?flag=evaluation" style="color:black">- Course Evaluation</a></li>
+             </ul>
+            
+             <ul style="background-color:#b5aa59;color:black">
+             <li style="color:black; font-style:italic"><strong> External Training</strong> </li>
+             <li><a href="idp_message2.aspx?id=3" style="color:black">- External Training Request</a> </li>
+            <li><a href="ext_training_list.aspx?req=ext&flag=after" style="color:black">- Action After Training Recording</a> 
+                </li>
+                  <li><a href="training_report.aspx" style="color:black">- My Training Record</a></li>
+          </ul>
+           <br />
+           
+        </div>
+       
+        <div class="sidemenu" id="panel_educator" runat="server">
+             <ul>
+             
+              <li style="background-color:#707014;color:black; font-style:italic"><strong>Database for IDP</strong></li>
+               <li style="background-color:#939905"><a href="idp_master.aspx?viewtype=educator" style="color:black">-Topic Management</a></li>
+               <li style="background-color:#a3af07"><a href="idp_template_list.aspx?viewtype=educator" style="color:black">-Program Management</a></li>
+             </ul> 
+           
+            <ul class="color2">  
+               <li style="background-color:#bad80a;color:black; font-style:italic"><strong>Training Course Management</strong></li>
+               <li style="background-color:#cce226"><a href="ext_training_list.aspx?viewtype=educator&req=int" style="color:black">- Internal Training Organized Request </a></li>
+               <li style="background-color:#d6e542"><a href="idp_training_calendar.aspx?viewtype=educator" style="color:black">- Attendance Record </a></li>
+              <li style="background-color:#e0ea68"><a href="idp_need_summary.aspx?viewtype=dept" style="color:black">- Training Need Summary</a></li>
+            </ul>
+             <br />
+        </div>
+       
+       
+          <div  class="sidemenu" id="panel_hr" runat="server">
+            <ul>
+              <li style="border-top: none;background-color:#b5a899; color:Black; font-style:italic" ><strong>L&D</strong></li>
+               <li style="background-color:#b5a899; color:Black; font-style:italic"><strong>Administrator</strong></li>
+              <li style="background-color:#b5a899"><a href="idp_master.aspx?viewtype=hr" style="color:Black" >- Master Data</a></li>
+              <li style="background-color:#b5a899"><a href="idp_template_list.aspx?viewtype=hr" style="color:Black" >- Development Program</a></li>
+               <li style="background-color:#ccc1b2; color:Black; font-style:italic"><strong>Process</strong></li>
+                <li style="background-color:#ccc1b2"><a href="home.aspx?viewtype=hr" style="color:Black">- Review IDP</a></li>
+               <!--   <li><a href="home.aspx?viewtype=hr&flag=ladder">- Review Nursing Ladder</a></li> -->
+              <li style="background-color:#ccc1b2"><a href="ext_training_list.aspx?viewtype=hr&req=int" style="color:Black">- Internal Training Process</a></li>
+               <li style="background-color:#ccc1b2"><a href="ext_training_list.aspx?viewtype=hr&req=ext" style="color:Black">- External Training Process</a></li>
+                <li style="border-top: none;background-color:#e5dbcc;color:Black; font-style:italic"><strong>Report</strong></li>
+                <li style="background-color:#e5dbcc;"><a href="idp_need_summary.aspx" style="color:Black">- Training Need Summary</a></li>
+                 <li style="background-color:#e5dbcc;"><a href="training_report.aspx?viewtype=hr" style="color:Black">- Training Report</a></li>
+                  <li style="background-color:#e5dbcc;"><a href="idp_report.aspx?viewtype=hr" style="color:Black">- IDP Report</a></li>
+            </ul>
+             <br />
+          </div>
+         
+           <div  class="sidemenu" id="panel_account" runat="server">
+            <ul>
+              <li style="border-top: none;background-color:#d6afd6;color:black; font-style:italic"><strong>Accounting</strong></li>
+              <li runat="server" id="li_budget" style="background-color:#d3b7cc"><a href="ext_training_list.aspx?viewtype=budget" style="color:Black">- Review budget</a></li>
+              <li runat="server" id="li_expense" style="background-color:#e5c6db"><a href="ext_training_list.aspx?viewtype=expense&req=ext" style="color:Black">- Review external training expense</a></li>
+              <li runat="server" id="li1" style="background-color:#e2ccd3"><a href="ext_training_list.aspx?viewtype=expense&req=int" style="color:Black">- Review internal training expense</a></li>
+            </ul>
+             <br />
+          </div>
+
+        <div class="sidemenu" id="panel_manager" runat="server">
+          <ul>
+              <li  style="border-top: none;background-color:#472b59;color:white; font-style:italic"><strong>Sup/Mgr/Dept Mgr/DD/Chief</strong></li>
+              <li style="background-color:#664975"><a href="home.aspx?viewtype=dept" style="color:white">- Review IDP</a></li>
+            <!--  <li><a href="home.aspx?viewtype=dept&flag=ladder">- Review Nursing Clinical Ladder</a></li> -->
+              <li style="background-color:#7f6689"><a href="ext_training_list.aspx?viewtype=dept&req=int" style="color:white">- Review Internal Training Organized Request</a></li>
+              <li style="background-color:#a893ad"><a href="ext_training_list.aspx?viewtype=dept&req=ext" style="color:white">- Review External Training Request</a></li>
+              <li style="background-color:#c6b5c4"><a href="idp_need_summary.aspx?viewtype=dept" style="color:Black">- Training Need Summary</a></li>
+                 <li style="background-color:#d8ccd1"><a href="training_report.aspx?viewtype=dept" style="color:Black">- Training Report</a></li>
+                 <li style="background-color:#e2d3d6"><a href="idp_report.aspx?viewtype=dept" style="color:Black">- IDP Report</a></li>
+            </ul>
+        </div>
+    
+       
+      
+        <br /></td>
+      <td align="center" valign="top"> 
+       <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">  
+        </asp:ContentPlaceHolder>   
+      
+       </td>
+    </tr>
+  </table>
+</div>
+
+  
+        
+    </div>
+    <div id="footer"></div>
+    <div id="backgroundPopup"></div>
+    </form>
+</body>
+</html>
+
+

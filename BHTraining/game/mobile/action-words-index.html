@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+</head> 
+<body> 
+<!--<audio  autoplay="autoplay" loop="loop">
+  <source src="game1.mp3" type="audio/mpeg" />
+</audio>-->
+<div data-role="page" style="width: 1024px; height: 748px;">
+
+	<div data-role="header" data-theme="a">
+		<div>
+		  <table width="100%">
+		    <tr>
+		      <td>&nbsp;</td>
+		      <td align="right"><img src="images/sound.png" width="32" height="32"></td>
+	        </tr>
+	      </table>
+	    </div>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="c" style="margin: 0px; padding: 0px; overflow: hidden;">
+      <div style="position: absolute; top: 35%; left: 25%;">
+  <label for="basic" style="font-size: 20px;">Employee ID:</label>
+        <input type="text" name="name" id="basic" value=""  />
+        <label for="select-choice-0" class="select" style="font-size: 20px;">Language:</label>
+  <select name="select-choice-0" id="select-choice-1">
+    <option value="thai">Thai</option>
+    <option value="eng">English</option>
+  </select>
+        <div><a href="action-words-page-1.html" data-role="button">Go!!</a> </div>
+      </div>
+
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+</body>
+</html>

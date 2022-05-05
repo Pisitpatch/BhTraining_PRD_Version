@@ -1,0 +1,71 @@
+﻿<%@ Master Language="VB" CodeFile="JCIMasterPage.master.vb" Inherits="jci2013_JCIMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     <script type="text/javascript" src="fancyapp/lib/jquery-1.9.0.min.js" charset="utf-8"></script>
+<title>Bumrungrad Information System</title>
+
+<link href="css/jcistyle.css" rel="stylesheet" type="text/css" />
+    <link href="../css/popup.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../js/jquery-1.4.2.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/check_session.js" charset="utf-8"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+      <div id="pageheader" style="HEIGHT: 80px; BACKGROUND: url(images/headerjci_bg.png) repeat-x"><img src="images/headerjci.png" width="1028" height="80" /></div>
+<div >
+
+ <div class="tip" id="div_tip" runat="server">
+      <table width="100%">
+        <tr>
+          <td><img src="../images/tip.png" width="16" height="16"  />Employee name&nbsp; <strong> 
+          <asp:Label ID="lblInfo" runat="server" Text=""></asp:Label></strong>
+          &nbsp; Department
+           <strong> <asp:Label ID="lblDeptName" runat="server" Text="" /> </strong></td>
+            <td style="text-align:right" > &nbsp;&nbsp;</td>
+          <td width="400" class="logout">
+         
+             
+              <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False">Sign out</asp:LinkButton>
+         
+             
+              &nbsp;&nbsp;
+                           
+          </td>
+        </tr>
+      </table>
+      </div>
+     <div class="mainmenu" runat="server" id="div_mainmenu"><ul>
+    <li>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="pdf_list.aspx?menu=1">Hospital Standard</asp:HyperLink>
+        </li>
+    <li>
+         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="std_list.aspx?menu=2">Standard Setting</asp:HyperLink>
+        </li>
+    <li>
+         <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="form_list.aspx?menu=3">Form Setting</asp:HyperLink>
+        </li>
+    <li>
+         <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="report.aspx?menu=4">Report</asp:HyperLink>
+        </li>
+
+    <li>
+         <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="user_list.aspx?menu=5" Visible="true">Users</asp:HyperLink>
+       </li>
+    </ul></div>
+    <div style="clear: both;"></div>
+   <div id="container">
+   <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">  
+       
+        </asp:ContentPlaceHolder>   
+    </div>
+    <div id="footer">&nbsp;</div>
+    </div>
+     </form>
+</body>
+</html>

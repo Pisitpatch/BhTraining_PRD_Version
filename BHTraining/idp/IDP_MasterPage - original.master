@@ -1,0 +1,122 @@
+﻿<%@ Master Language="VB" CodeFile="IDP_MasterPage.master.vb" Inherits="idp_IDP_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> Individual Development Plan : Bumrungrad Information System</title>
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/jquery-1.6.min.js" charset="utf-8"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="pageheader"><a href="../menu.aspx"><img src="../images/Bumrungrad-Hospital-Logo.gif" border="0" alt="logo" width="196" height="82" /></a></div>
+<div id="topbar"><table width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="30"><div  id="topmenu"><div style="color:White">Login :  
+        <asp:Label ID="lblInfo" runat="server" Text="x"></asp:Label>
+        <strong>Department</strong>  <asp:Label ID="lblDeptName" runat="server" Text="x"></asp:Label>
+         <strong>Cost Center</strong>  <asp:Label ID="lblCostcenter" runat="server" Text="x"></asp:Label>
+        </div>
+    </div></td>
+    <td width="150" align="right">
+        <asp:LinkButton ID="linkLogout" runat="server">Log out >></asp:LinkButton>&nbsp;&nbsp;</td>
+  </tr>
+</table>
+
+</div>
+<div class="spacer"></div>
+<div id="pathway"><asp:SiteMapPath ID="SiteMapPath1" runat="server">  </asp:SiteMapPath></div>
+   <div id="container">
+   
+   <div id="Div1">
+  <table width="100%" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="180" valign="top">
+      <div class="sidemenu" id="panel_user" runat="server" >
+          <ul>
+            <li style="border-top: none;"><a href="#"><strong>Individual Dev. Plan</strong></a></li>
+            <li><a href="home.aspx">- My Development Plan</a></li>
+            <!--
+            <li><a href="idp_nurse_detail_view.html">- Nursing Ladder</a></li>
+             -->
+            <li><a href="internal_training_list.aspx">- Internal Training Request &nbsp;&amp; Request</a></li>
+           
+            <li><a href="ext_training_list.aspx">- External Training Request</a></li>
+            <!--
+            <li><a href="training_document.html">- Training Document Library</a></li>
+            -->
+          </ul>
+           <br />
+        </div>
+       
+        <div class="sidemenu" id="panel_educator" runat="server">
+             <ul>
+             
+              <li style="border-top: none;"><a href="idp_user_main.html"><strong>Educator</strong></a></li>
+                <li><a href="idp_topic_master.aspx">- IDP Topic</a></li>
+               <li><a href="idp_template_list.aspx?viewtype=educator">- IDP Program</a></li>
+             
+              <li><a href="educator_internal_training_list.html">- Internal Training Organized Request</a></li>
+              <li><a href="training_needsummary.html">- Training Need Summaries</a></li>
+            </ul>
+             <br />
+        </div>
+       
+       
+          <div  class="sidemenu" id="panel_hr" runat="server">
+            <ul>
+              <li style="border-top: none;"><a href="idp_user_main.html"><strong>Training Department</strong></a></li>
+              <li><a href="idp_master.aspx">- Manage Master Data</a></li>
+              <li><a href="idp_template_list.aspx?viewtype=hr">- Manage IDP Program</a></li>
+                <li><a href="home.aspx?viewtype=hr">- IDP HR Process</a></li>
+              <li><a href="ext_training_list.aspx?viewtype=hr">- External Training Process</a></li>
+            </ul>
+             <br />
+          </div>
+         
+           <div  class="sidemenu" id="panel_account" runat="server">
+            <ul>
+              <li style="border-top: none;"><a href="#"><strong>Accounting</strong></a></li>
+              <li><a href="ext_training_list.aspx?viewtype=budget">- Review budget</a></li>
+              <li><a href="ext_training_list.aspx?viewtype=expense">- Review expense</a></li>
+            
+            </ul>
+             <br />
+          </div>
+
+        <div class="sidemenu" id="panel_manager" runat="server">
+          <ul>
+              <li style="border-top: none;"><a href="#"><strong>Sup/Mgr/Dept Mgr/Director/Chief</strong></a></li>
+              <li><a href="home.aspx?viewtype=dept">- Review IDP</a></li>
+              <li><a href="internal_training_list.aspx?viewtype=dept">- Review Internal Training Request</a></li>
+              <li><a href="ext_training_list.aspx?viewtype=dept">- Review External Training Request</a></li>
+              <li><a href="training_needsummary.html">- Training Need Summaries</a></li>
+              <li><a href="training_needsurvey.html">- Report Training Need Survey</a></li>
+               
+            </ul>
+        </div>
+    
+       
+      
+        <br /></td>
+      <td align="center" valign="top"> 
+       <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">  
+        </asp:ContentPlaceHolder>   
+      
+       </td>
+    </tr>
+  </table>
+</div>
+
+  
+        
+    </div>
+    <div id="footer"></div>
+    </form>
+</body>
+</html>
+
+

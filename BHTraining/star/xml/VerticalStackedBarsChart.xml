@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<verticalStackedBarsChart>
+<config>
+<chartarea x="45" y="75" width="400" height="180" backColor1="0xfafafa" backColor2="0xECECEC" xMargin="10" borderColor="0xbdbdbd" borderThick="2" borderAlpha="1" />
+<yaxis tagSize="13" tagColor="0x5e7086" tagMargin="3" min="0" max="1000" intervals="5" decimals="0" />
+<xaxis tagSize="13" tagColor="0x5e7086" tagMargin="1" periodMargin="0.5"/>
+<gridlines thick="1" color="0xcccccc" alpha="0.8" />
+<legends visible="true" x="460" y="50" width="120" square="10" textSize="13" textColor="0x000000" backColor="0xFFFFFF" backAlpha="1" borderColor="0xcccccc" borderThick="1" borderAlpha="1" legendBackColor="0xf2f2f2" />
+<tooltip size="13" xmargin="2" ymargin="0" />
+<animation openTime="0.5" synchronized="false" />
+</config>
+<texts>
+<paragraph align="center" bold="true" color="0x000066" size="16" x="45" y="10" width="500" text="Total Number of Nominator By Customer Segment" />
+<paragraph align="center" bold="false" color="0x000066" size="14" x="45" y="30" width="500" text="From 1 May 2012 to 22 November 2012"  />
+</texts>
+<series>
+<serie borderColor="0xd78d51" lightColor="0xefb585" darkColor="0xd78d51" tooltipBackColor="0xd78d51" tooltipTextColor="0xFFFFFF" name="Not specified" />
+<serie borderColor="0xda716e" lightColor="0xe6a19f" darkColor="0xda716e" tooltipBackColor="0xda716e" tooltipTextColor="0xFFFFFF" name="Thai" />
+<serie borderColor="0x9ab762" lightColor="0xc3db95" darkColor="0x9ab762" tooltipBackColor="0xc3db95" tooltipTextColor="0x000000" name="Expat" />
+<serie borderColor="0x90b1db" lightColor="0xc0d5f0" darkColor="0x90b1db" tooltipBackColor="0xc0d5f0" tooltipTextColor="0x000000" name="Inter" />
+</series>
+<periods>
+<period name="May">
+<v>56</v>
+<v>44</v>
+<v>19</v>
+<v>47</v>
+</period>
+<period name="June">
+<v>88</v>
+<v>133</v>
+<v>34</v>
+<v>127</v>
+</period>
+<period name="July">
+<v>49</v>
+<v>66</v>
+<v>13</v>
+<v>81</v>
+</period>
+<period name="August">
+<v>75</v>
+<v>123</v>
+<v>14</v>
+<v>81</v>
+</period>
+<period name="September">
+<v>55</v>
+<v>100</v>
+<v>19</v>
+<v>87</v>
+</period>
+<period name="October">
+<v>47</v>
+<v>99</v>
+<v>18</v>
+<v>80</v>
+</period>
+<period name="November">
+<v>27</v>
+<v>47</v>
+<v>10</v>
+<v>71</v>
+</period>
+</periods>
+</verticalStackedBarsChart>

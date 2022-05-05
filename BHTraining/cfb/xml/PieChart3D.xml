@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pieChart>
+<config>
+<pie x="120" y="80" radiusX="130" radiusY="60" depth="35" />
+<legends visible="true" x="435" y="80" width="140" square="10" textSize="13" textColor="0x000000" backColor="0xFFFFFF" backAlpha="1" borderColor="0x587b8c" borderThick="1" borderAlpha="1" legendBackColor="0xf2f2f2" />
+<tooltip showName="true" showPercent="true" size="13" xmargin="2" ymargin="0" valueDecimals="0" percentDecimals="1" />
+<tag distance="0.8" size="13" decimals="0" />
+<animation openTime="2" moveTime="0.5" synchronized="false" />
+</config>
+<texts>
+<paragraph align="center" bold="true" color="0x000066" size="16" x="45" y="10" width="500" text="Total Number of Customer Feedback by Type of Comment" />
+<paragraph align="center" bold="false" color="0x000066" size="14" x="45" y="30" width="500" text="Incident report information from 30 March 2022 to 29 April 2022" />
+</texts>
+<series>
+<serie borderColor="0xea6e29" lightColor="0xf8b088" darkColor="0xcd4a00" tooltipBackColor="0xea6e29" tooltipTextColor="0xFFFFFF" tagColor="0xFFFFFF"  name="Complaint" value="217" />
+<serie borderColor="0x7fae3a" lightColor="0xacca80" darkColor="0x436413" tooltipBackColor="0x7fae3a" tooltipTextColor="0x000000" tagColor="0x000000"  name="Praise" value="376" />
+<serie borderColor="0x7e5433" lightColor="0xaa876b" darkColor="0x4d301a" tooltipBackColor="0x7e5433" tooltipTextColor="0xFFFFFF" tagColor="0xFFFFFF"  name="Service Recovery" value="4" />
+<serie borderColor="0xc94c2f" lightColor="0xd7816d" darkColor="0x8c2208" tooltipBackColor="0xc94c2f" tooltipTextColor="0xFFFFFF" tagColor="0xFFFFFF"  name="Suggestion" value="67" />
+</series>
+</pieChart>

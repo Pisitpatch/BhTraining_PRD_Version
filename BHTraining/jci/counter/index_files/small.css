@@ -1,0 +1,63 @@
+﻿html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	text-align: center;
+}
+
+h1 {
+	font-size: 18pt;
+	letter-spacing: 7px;
+	/*border-bottom: 1px solid #ddd;*/
+	margin: 0;
+}
+
+h2.subtitle {
+	margin-top: 5px;
+	margin-bottom: 40px;
+	font-size: 12pt;
+}
+
+#container {
+	margin: 0px auto;
+	width: 360px;
+	color: #0000;
+	background: transparent url('../11.png') 0 0 no-repeat;
+}
+
+#countdown_dashboard {
+	height: 110px;
+}
+
+.dash {
+	width: 60px;
+	height: 70px;
+	background: transparent url('../dash-small.png') 0 13px no-repeat;
+	float: left;
+	margin-left: 10px;
+	position: relative;
+}
+
+.dash .digit {
+	font-size: 28pt;
+	font-weight: bold;
+	float: left;
+	width: 27px;
+	text-align: center;
+	font-family: Times;
+	color: #FF3300;
+	position: relative;
+}
+
+.dash_title {
+	/*position: absolute;*/
+	display: block;
+	bottom: 0px;
+	right: 6px;
+	font-size: 8.5pt;
+	color: #0000;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}

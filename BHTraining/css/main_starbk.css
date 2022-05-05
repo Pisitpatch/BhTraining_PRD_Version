@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {margin: 0px;}
+
+body, td{font-family: 'Segoe UI', Arial, Tahoma; font-size: 10pt; color: #333; text-align: left;}
+th {font-family: 'Segoe UI', Arial, Tahoma; font-size: 10pt; color: #333; text-align: left;}
+
+a:link, a:visited {color: #338987; text-decoration: none;}
+
+a:hover {color: #338987; text-decoration: underline;}
+
+
+
+.spacer {clear: both;}
+
+
+
+.small {font-size: 11px;}
+
+
+
+.digit {text-align: right; padding-right: 30px;}
+
+
+
+.red {color: #C30;}
+
+
+
+.green {color: #090;}
+
+
+
+.orange {color: #F60;}
+
+
+
+#pageheader {background: url(../images/top_bg.gif) repeat-x;}
+
+
+
+#topbar {background: #E098AC; height: 30px;}
+
+
+
+#topbar a {color: #FFF;}
+
+
+
+#topmenu {}
+
+
+
+#topmenu div {float: left; padding: 5px 15px; border-right: solid 1px #abbbb4;}
+
+
+
+#topmenu a:link, #topmenu a:visited {color: #abbbb4; font-size: 11px;}
+
+
+
+#topmenu a:hover, #topmenu a:active {color: #FFF; text-decoration: none;}
+
+
+
+#sidemenu , .sidemenu {
+
+	background-color: #E098AC;
+
+}
+
+
+
+#sidemenu , .sidemenu ul {margin: 0px; padding: 0px;}
+
+
+
+#sidemenu, .sidemenu ul li {display: block; list-style: none; padding: 5px 5px 5px 15px; color: #FFF; font-size: 11px; border-top: solid 1px #bfe0dc;  border-bottom: solid 1px #0f6057;}
+
+
+
+#sidemenu, .sidemenu ul li a {color: #FFF;}
+
+
+
+#pathway {font-size: 11px; padding: 5px 15px; color: #999;}
+
+
+
+#pathway a {color: #999;}
+
+
+
+#container {margin: 0px 0px 15px 0px;}
+
+
+
+#footer {background: #c7d2da; height: 36px; border-bottom: solid 2px #abb8c2;}
+
+
+
+.button-green {background: #0a5d53; border: solid 1px #24928f; color: #FFF; font-size: 11px; padding: 3px 15px;}
+
+
+
+.button-green2 {background: #e6eff9; border: solid 1px #406c67; color: #406c67; font-size: 11px; padding: 2px 15px;}
+
+
+
+#signin {}
+
+
+
+#signin th {background: #409997; color: #FFF; font-weight: normal; font-size: 16px; text-align: left; padding: 6px 10px;}
+
+
+
+#header {color: #788991; font-size: 18px; font-weight: bold; padding: 10px 15px;}
+
+
+
+#data {padding: 10px 15px; width: 1050px;}
+
+
+
+.tdata {border: ridge 1px #E1E1E1; border-collapse: collapse;}
+
+
+
+.tdata td.colname {border: inset 1px #808080; background-color: #E1E1E1; text-align: center;}
+
+
+
+.tdata td {border: solid 1px #e8e8e8;}
+
+
+
+.tdata td td {border: none;}
+
+
+
+.tdata3 {border: solid 1px #abbbb4;}
+
+
+
+.tdata3 .theader {background: #E098AC; color: #FFF; font-weight: bold;}
+

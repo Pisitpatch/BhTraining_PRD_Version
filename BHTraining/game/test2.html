@@ -1,0 +1,287 @@
+<html>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="images/3plussoft.png"/>
+<head>
+<style type="text/css">
+
+
+
+html {
+	margin: 0px;
+	padding: 0px
+}
+body {
+	margin: 0px;
+	padding: 0px
+}
+.container img.wide {
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+}
+.container img.tall {
+	max-height: 100%;
+	max-width: 100%;
+	width: auto;
+}
+​
+</style>
+<script src="jquery-1.6.min.js"></script>
+<script src="jquery.flip.min.js"></script>
+<script type="text/javascript">
+$(window).load(function(){
+ $('.container').find('img').each(function(){
+  var imgClass = (this.width/this.height > 1) ? 'wide' : 'tall';
+  $(this).addClass(imgClass);
+ })
+});
+
+$(document).ready(function(){
+		$("#play-bt").click(function(){
+			$("#audio-player")[0].play();
+			$("#message").text("Music started");
+		})
+ 
+		$("#pause-bt").click(function(){
+			$("#audio-player")[0].pause();
+			$("#message").text("Music paused");
+		})
+ 
+		$("#stop-bt").click(function(){
+			$("#audio-player")[0].pause();
+			$("#audio-player")[0].currentTime = 0;
+			$("#message").text("Music Stopped");
+		})
+		
+		
+	});
+
+
+	
+function speakQuestion(filename){
+	$("#audio-player")[0].src = filename;
+	$("#audio-player")[0].play();
+}
+
+</script>
+<script type="text/javascript">
+	
+			$(function(){
+				
+				$("#choice1").bind("click",function(){
+					$("#audio-player")[0].src = "beep-1.mp3";
+					$("#audio-player")[0].play();
+					var $this = $(this);
+					$("#flipbox1").flip({
+						direction: $this.attr("rel"),
+						speed:300,
+					/*	color: $this.attr("rev"),*/
+						//content: $this.attr("title"),//(new Date()).getTime(),
+						content: "<img src='images/ok-icon1.png' alt='OK' />",//(new Date()).getTime(),
+						onBefore: function(){$(".revert").show()},
+						onEnd: function(){
+							
+						setTimeout(function () {
+							document.frm.action = "test.html";
+						document.frm.submit();
+						}, 2000); // in milliseconds
+						
+				
+							//console.log('when the animation has already ended');
+						}
+					})
+					return false;
+				});
+				
+				$("#choice2").bind("click",function(){
+						$("#audio-player")[0].src = "beep-5.mp3";
+					$("#audio-player")[0].play();
+					var $this = $(this);
+					$("#flipbox2").flip({
+						direction: $this.attr("rel"),
+						color: $this.attr("rev"),
+						speed:300,
+						//content: $this.attr("title"),//(new Date()).getTime(),
+						content: "<img src='images/no-icon1.png' alt='OK' />",//(new Date()).getTime(),
+						onBefore: function(){$(".revert").show()},
+						onEnd: function(){
+						//	window.setTimeout(alert("End") , 10000);
+							//var snd = new Audio("beep-5.wav"); // buffers automatically when created
+						//	wrong_sound.play();
+							//console.log('when the animation has already ended');
+						}
+					})
+					return false;
+				});
+
+				$("#choice3").bind("click",function(){
+						$("#audio-player")[0].src = "beep-5.mp3";
+					$("#audio-player")[0].play();
+					var $this = $(this);
+					$("#flipbox3").flip({
+						direction: $this.attr("rel"),
+						color: $this.attr("rev"),
+						speed:300,
+						//content: $this.attr("title"),//(new Date()).getTime(),
+						content: "<img src='images/no-icon1.png' alt='OK' />",//(new Date()).getTime(),
+						onBefore: function(){$(".revert").show()},
+						onEnd: function(){
+						//	window.setTimeout(alert("End") , 10000);
+							//var snd = new Audio("beep-5.wav"); // buffers automatically when created
+						//	wrong_sound.play();
+							//console.log('when the animation has already ended');
+						}
+					})
+					return false;
+				});
+				
+				$("#choice4").bind("click",function(){
+						$("#audio-player")[0].src = "beep-5.mp3";
+					$("#audio-player")[0].play();
+					var $this = $(this);
+					$("#flipbox4").flip({
+						direction: $this.attr("rel"),
+						color: $this.attr("rev"),
+						speed:300,
+						//content: $this.attr("title"),//(new Date()).getTime(),
+						content: "<img src='images/no-icon1.png' alt='OK' />",//(new Date()).getTime(),
+						onBefore: function(){$(".revert").show()},
+						onEnd: function(){
+						//	window.setTimeout(alert("End") , 10000);
+						//	var snd = new Audio("beep-5.wav"); // buffers automatically when created
+						//	wrong_sound.play();
+							//console.log('when the animation has already ended');
+						}
+					})
+					return false;
+				});
+				/*				
+				$(".revert").bind("click",function(){
+					$("#flipbox").revertFlip();
+					return false;
+				});
+				*/
+
+			$("#choice11").bind("click",function(){
+					$("#audio-player")[0].src = "beep-1.mp3";
+					$("#audio-player")[0].play();
+					var $this = $(this);
+					$("#flipbox11").flip({
+						direction: $this.attr("rel"),
+						speed:300,
+					/*	color: $this.attr("rev"),*/
+						//content: $this.attr("title"),//(new Date()).getTime(),
+						content: "<img src='images/ok-icon1.png' alt='OK' />",//(new Date()).getTime(),
+						onBefore: function(){$(".revert").show()},
+						onEnd: function(){
+					
+							//console.log('when the animation has already ended');
+						}
+					})
+					return false;
+				});
+				
+				$("#choice22").bind("click",function(){
+						$("#audio-player")[0].src = "beep-5.mp3";
+					$("#audio-player")[0].play();
+					var $this = $(this);
+					$("#flipbox22").flip({
+						direction: $this.attr("rel"),
+						color: $this.attr("rev"),
+						speed:300,
+						//content: $this.attr("title"),//(new Date()).getTime(),
+						content: "<img src='images/no-icon1.png' alt='OK' />",//(new Date()).getTime(),
+						onBefore: function(){$(".revert").show()},
+						onEnd: function(){
+						//	window.setTimeout(alert("End") , 10000);
+							//var snd = new Audio("beep-5.wav"); // buffers automatically when created
+						//	wrong_sound.play();
+							//console.log('when the animation has already ended');
+						}
+					})
+					return false;
+				});
+
+				$("#choice33").bind("click",function(){
+						$("#audio-player")[0].src = "beep-5.mp3";
+					$("#audio-player")[0].play();
+					var $this = $(this);
+					$("#flipbox33").flip({
+						direction: $this.attr("rel"),
+						color: $this.attr("rev"),
+						speed:300,
+						//content: $this.attr("title"),//(new Date()).getTime(),
+						content: "<img src='images/no-icon1.png' alt='OK' />",//(new Date()).getTime(),
+						onBefore: function(){$(".revert").show()},
+						onEnd: function(){
+						//	window.setTimeout(alert("End") , 10000);
+							//var snd = new Audio("beep-5.wav"); // buffers automatically when created
+						//	wrong_sound.play();
+							//console.log('when the animation has already ended');
+						}
+					})
+					return false;
+				});
+				
+				$("#choice44").bind("click",function(){
+						$("#audio-player")[0].src = "beep-5.mp3";
+					$("#audio-player")[0].play();
+					var $this = $(this);
+					$("#flipbox44").flip({
+						direction: $this.attr("rel"),
+						color: $this.attr("rev"),
+						speed:300,
+						//content: $this.attr("title"),//(new Date()).getTime(),
+						content: "<img src='images/no-icon1.png' alt='OK' />",//(new Date()).getTime(),
+						onBefore: function(){$(".revert").show()},
+						onEnd: function(){
+						//	window.setTimeout(alert("End") , 10000);
+						//	var snd = new Audio("beep-5.wav"); // buffers automatically when created
+						//	wrong_sound.play();
+							//console.log('when the animation has already ended');
+						}
+					})
+					return false;
+				});			
+
+			});
+			
+		
+		
+</script>
+</head>
+<body>
+<form action="" method="post" id="frm" name="frm">
+  <div style="width:100%; height:6%; vertical-align:middle; background-color:#000">
+    <table width="100%">
+      <tr>
+        <td width="50%"><a href="javascript:;" onClick="window.location.reload();"><img src="images/home1.png" alt="home" title="home" border="0" /></a> <a href="javascript:;"  onClick="document.frm.action='login.html' ; document.frm.submit(); " ><img src="images/logoff.png" alt="logoff" title="logoff" border="0" /></a></td>
+        <td align="right">
+        <a href="javascript:;" onClick="speakQuestion('word1.mp3');"><img src="images/speaker.png" alt="speaker" title="speaker" border="0" /></a>
+        <a href="javascript:;" onClick="window.location.reload();"><img src="images/refresh.png" alt="home" title="home" border="0" /></a></td>
+      </tr>
+    </table>
+  </div>
+  <div id="main" style="width:100%;">
+  <div id="content" >
+    <div  class="container" id="flipbox1" style="background-color: rgb(200, 217, 126); visibility: visible; width:50%; height:47% ; float:left ; text-align:center ">
+      <div id="flipPad"><a href="javacript:;" id="choice1" class="top" rel="bt" rev="#B0EB17" title="Ohhh yeah!"><img src="images_choice/5.jpg" alt="choice 1" border="0" /></a> 
+        <!--
+						<a href="#" class="left" rel="rl" rev="#39AB3E" title="Change content as <em>you</em> like!">left</a>
+					
+						<a href="#" class="bottom" rel="tb" rev="#82BD2E" title="Hey oh let's go!">bottom</a>
+						<a href="#" class="right" rel="lr" rev="#C8D97E" title="Waiting for css3...">right</a>
+						<a href="#" class="revert">revert!</a>
+           --> 
+        
+      </div>
+    </div>
+    <div  class="container" id="flipbox2" style="background-color: rgb(200, 217, 126); visibility: visible; width:50%; height:47% ; float:left ; text-align:center "> <a href="javacript:;" id="choice2" class="top" rel="rl" rev="#B0EB17" title="Ohhh no!"> <img src="images_choice/6.jpg" alt="choice 1" border="0" /></a></div>
+    <div  class="container" id="flipbox3" style="background-color: rgb(200, 217, 126); visibility: visible; width:50%; height:47% ; float:left ; text-align:center"> <a href="javacript:;" id="choice3" class="top" rel="bt" rev="#B0EB17" title="Ohhh no!"> <img src="images_choice/7.jpg" alt="choice 1" border="0" /></a></div>
+    <div  class="container" id="flipbox4" style="background-color: rgb(200, 217, 126); visibility: visible; width:50%; height:47% ; float:left ; text-align:center"> <a href="javacript:;" id="choice4" class="top" rel="rl" rev="#B0EB17" title="Ohhh no!"> <img src="images_choice/8.jpg" alt="choice 1" border="0" /></a></div>
+  </div>
+  </div>
+</form>
+<audio id="audio-player" name="audio-player" src="beep-1.mp3"  ></audio>
+</body>
+</html>

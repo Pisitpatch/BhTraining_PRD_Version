@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="menu.aspx" title="Main"  description="">
+      
+      <siteMapNode url="incident/report_viewer.aspx" title="IR&amp;CFB Portal"  description="" >
+        <siteMapNode url="incident/incident_physician_defendant.aspx" title="Summary Report"  description="" >
+      
+        </siteMapNode>
+         <siteMapNode url="incident/logbook.aspx" title="Incident Log Book"  description="" />
+
+        <siteMapNode url="incident/home.aspx" title="Incident Form"  description="" >
+          <siteMapNode url="incident/form_incident.aspx" title="Incident Form Report"  description="" />
+        </siteMapNode>
+      </siteMapNode>
+
+      <siteMapNode url="cfb/home.aspx" title="Customer Feedback"  description="" >
+        <siteMapNode url="cfb/report_cfb.aspx" title="CFB Summary Report"  description="" />
+        <siteMapNode url="cfb/report_viewer.aspx" title="Dashboard"  description="" />
+        <siteMapNode url="cfb/form_cfb.aspx" title="Customer Feedback"  description="" />
+        <siteMapNode url="cfb/logbook.aspx" title="Customer Feedback Log Book"  description="" />
+      </siteMapNode>
+
+      <siteMapNode url="idp/home.aspx" title="L&amp;D"  description="" >
+        <siteMapNode url="idp/training_report.aspx" title="Training Report"  description="" />
+        <siteMapNode url="idp/idp_detail.aspx" title="IDP"  description="" />
+      </siteMapNode>
+
+      <siteMapNode url="idp/idp_master.aspx" title="L&amp;D Categories and Topics"  description="" >
+       
+      </siteMapNode>
+
+      <siteMapNode url="idp/idp_message.aspx" title="L&amp;D Portal"  description="" >
+
+      </siteMapNode>
+
+      <siteMapNode url="idp/idp_need_summary.aspx" title="Training Need Summary"  description="" >
+
+      </siteMapNode>
+
+      <siteMapNode url="idp/idp_training_calendar.aspx" title="Internal Training Registration"  description="" >
+        <siteMapNode url="idp/idp_training_register.aspx" title="Training Register"  description="" />
+        
+        <siteMapNode url="idp/idp_training_evaluation.aspx" title="Training Evaluation Form"  description="" />
+      </siteMapNode>
+
+      <siteMapNode url="idp/idp_template_list.aspx" title="L&amp;D Template"  description="" >
+      
+      </siteMapNode>
+
+      <siteMapNode url="idp/idp_training_calendar.aspx?viewtype=educator" title="Internal Training Registration"  description="" >
+       
+        <siteMapNode url="idp/ext_register.aspx" title="Training Register"  description="" />
+       
+      </siteMapNode>
+
+      <siteMapNode url="idp/ext_training_list.aspx" title="Trainging request "  description="" >
+        <siteMapNode url="idp/ext_training_detail.aspx" title="Training detail"  description="" />
+      </siteMapNode>
+
+      <siteMapNode url="ssip/home.aspx" title="Check Status"  description="" >
+        <siteMapNode url="ssip/form_ssip.aspx" title="Submit My Ideas  "  description="" />
+        <siteMapNode url="ssip/ssip_message.aspx" title="Definition of Innovation "  description="" />
+        <siteMapNode url="ssip/ssip_objective.aspx" title="Objective and Rule "  description="" />
+        <siteMapNode url="ssip/ssip_master.aspx" title="SSIP Manage Master data "  description="" />
+        <siteMapNode url="ssip/ssip_reserve_room.aspx" title="Staff Suggestion and Innovation Lab Reservation  "  description="" />
+      </siteMapNode>
+
+      <siteMapNode url="srp/srp_message.aspx" title="Staff Recognition Program"  description="" >
+        <siteMapNode url="srp/srp_contact.aspx" title="Contact Us"  description="" />
+          <siteMapNode url="srp/srp_mission.aspx" title="Vision / Mission Statement"  description="" />
+        <siteMapNode url="srp/srp_point_list.aspx" title="Point Checking"  description="" />
+        <siteMapNode url="srp/srp_self_register.aspx" title="On the Spot Card Register"  description="" />
+        <siteMapNode url="srp/srp_reserve.aspx" title="SRP Item Reservation"  description="" />
+        <siteMapNode url="srp/srp_shop.aspx" title="Online Shop Catalog"  description="" />
+        <siteMapNode url="srp/srp_register.aspx" title="On the Spot Card Register"  description="" />
+        <siteMapNode url="srp/srp_issue.aspx" title="On the Spot Card Issue "  description="" />
+        <siteMapNode url="srp/srp_quota.aspx" title="On the Spot Card Quota"  description="" />
+       <siteMapNode url="srp/srp_report.aspx" title="SRP Report"  description="" />
+      <siteMapNode url="srp/srp_import.aspx" title="SRP Point Adjustment"  description="" />
+      <siteMapNode url="srp/srp_master.aspx" title="SRP Setting"  description="" />
+      </siteMapNode>
+      
+      <siteMapNode url="incident/topic_management.aspx" title="Category Management"  description="" >
+       
+      </siteMapNode>
+
+      <siteMapNode url="star/home.aspx" title="Check Status"  description="" >
+        <siteMapNode url="star/form_star.aspx" title="Submit Star"  description="" />
+       
+      </siteMapNode>
+      <siteMapNode url="star/star_message.aspx" title="News and Event"  description="" />
+      <siteMapNode url="star/star_report.aspx" title="Star Summary Report"  description="" />
+      <siteMapNode url="star/star_report2.aspx" title="Star Summary Report"  description="" />
+      
+      <siteMapNode url="user_management.aspx" title="User Management"  description="" >
+        <siteMapNode url="user_detail.aspx" title="User Detail"  description="" />
+      </siteMapNode>
+      <siteMapNode url="doctor_management.aspx" title="Doctor Management"  description="" >
+        <siteMapNode url="doctor_detail.aspx" title="Doctor Detail"  description="" />
+      </siteMapNode>
+      <siteMapNode url="role_management.aspx" title="Role Management"  description="" >
+        <siteMapNode url="role_detail.aspx" title="Role Detail"  description="" />
+      </siteMapNode>
+      <siteMapNode url="dept_management.aspx" title="Department Management"  description="" >
+        <siteMapNode url="dept_detail.aspx" title="Department Detail"  description="" />
+      </siteMapNode>
+        <siteMapNode url="user_fte.aspx" title="Upload FTE file"  description="" />
+    </siteMapNode>
+
+
+</siteMap>

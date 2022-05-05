@@ -1,0 +1,2 @@
+﻿>>login.aspx on jci2013 conflicts with the login on the root site
+>>Incident folder is the active one while Incident2 is the backup. Beyond compare shown that

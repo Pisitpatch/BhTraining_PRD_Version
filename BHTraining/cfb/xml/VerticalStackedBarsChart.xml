@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<verticalStackedBarsChart>
+<config>
+<chartarea x="45" y="75" width="400" height="180" backColor1="0xfafafa" backColor2="0xECECEC" xMargin="10" borderColor="0xbdbdbd" borderThick="2" borderAlpha="1" />
+<yaxis tagSize="13" tagColor="0x5e7086" tagMargin="3" min="0" max="1000" intervals="5" decimals="0" />
+<xaxis tagSize="13" tagColor="0x5e7086" tagMargin="1" periodMargin="0.5"/>
+<gridlines thick="1" color="0xcccccc" alpha="0.8" />
+<legends visible="true" x="460" y="50" width="120" square="10" textSize="13" textColor="0x000000" backColor="0xFFFFFF" backAlpha="1" borderColor="0xcccccc" borderThick="1" borderAlpha="1" legendBackColor="0xf2f2f2" />
+<tooltip size="13" xmargin="2" ymargin="0" />
+<animation openTime="0.5" synchronized="false" />
+</config>
+<texts>
+<paragraph align="center" bold="true" color="0x000066" size="16" x="45" y="10" width="500" text="Total Number of Customer Feedback By Customer Segment" />
+<paragraph align="center" bold="false" color="0x000066" size="14" x="45" y="30" width="500" text="From 1 October 2021 to 29 April 2022"  />
+</texts>
+<series>
+<serie borderColor="0xd78d51" lightColor="0xefb585" darkColor="0xd78d51" tooltipBackColor="0xd78d51" tooltipTextColor="0xFFFFFF" name="Not specified" />
+<serie borderColor="0xda716e" lightColor="0xe6a19f" darkColor="0xda716e" tooltipBackColor="0xda716e" tooltipTextColor="0xFFFFFF" name="Thai" />
+<serie borderColor="0x9ab762" lightColor="0xc3db95" darkColor="0x9ab762" tooltipBackColor="0xc3db95" tooltipTextColor="0x000000" name="Expat" />
+<serie borderColor="0x90b1db" lightColor="0xc0d5f0" darkColor="0x90b1db" tooltipBackColor="0xc0d5f0" tooltipTextColor="0x000000" name="Inter" />
+</series>
+<periods>
+<period name="October">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="November">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="December">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="January">
+<v>2</v>
+<v>551</v>
+<v>58</v>
+<v>92</v>
+</period>
+<period name="February">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="March">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+<period name="April">
+<v>0</v>
+<v>0</v>
+<v>0</v>
+<v>0</v>
+</period>
+</periods>
+</verticalStackedBarsChart>

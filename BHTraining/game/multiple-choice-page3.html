@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+    <style type="text/css">
+	@font-face
+{
+font-family: myFirstFont;
+src: url('TH K2D July8.ttf')
+}
+div
+{
+font-family:myFirstFont;
+font-weight: bold;
+}
+.topbar
+{font-family: 'Comic Sans MS'; font-size: 18px; font-weight: bold; color: #FFF;}
+.content 
+{margin: 0px; padding: 0px; overflow: hidden;}
+.question
+{height: 75px; padding: 10px 80px; font-size: 36px; color: #FFF; font-family: myFirstFont; font-weight: bold;}
+.question span 
+{color: #FF3}
+.answer 
+{height: 400px; padding: 13px 250px 13px 80px;}
+.answer ol
+{margin: 0px;  font-size: 36px; color: #339; font-family: myFirstFont; font-weight: bold; line-height: 1.5em;}
+.answer li a:link, .answer li a:visited 
+{
+color: #339;
+text-decoration: none;
+}
+.answer li a:hover
+{
+color: #339;
+text-decoration: none;
+}
+
+    </style>
+</head> 
+<body> 
+<!--<audio  autoplay="autoplay" loop="loop">
+  <source src="game1.mp3" type="audio/mpeg" />
+</audio>-->
+
+<div data-role="page" style="width: 1024px; height: 748px; background: url(images/GameJCI-MultipleChoice-02.jpg) no-repeat;">
+
+<div>
+		  <table width="100%">
+		    <tr>
+		      <td height="60" class="topbar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Player Mr.Natee Sorapipat ID XXXXX&nbsp;</td>
+		      <td width="285" align="right" class="topbar">Time left 60 sec&nbsp;&nbsp;<a href="multiple-choice-index.html"><img src="images/on-off.png" width="24" height="24" border="0"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	        </tr>
+  </table>
+	    </div><!-- /header -->
+
+	<div class="content">
+    <div class="question"><span>คำถามที่ 3:</span>  ทำอย่างไรหากผู้ป่วยปฎิเสธการป้ายข้อมือ</div>
+    <div class="answer">
+  	<ol>
+    <li> <a href="wrong.html" data-rel="dialog" data-transition="pop">อธิบายความเสี่ยงและผลกระทบที่อาจเกิดขึ้นหากไม่ได้ใส่ป้ายข้อมือ</a></li>
+    <li> <a href="wrong.html" data-rel="dialog" data-transition="pop">บันทึกเหตุผลที่ปฏิเสธเป็นลายลักษณ์อักษรใน OPD Nursing Record หรือ Nursing Progress Note</a></li>
+    <li><a href="correct-3.html" data-rel="dialog" data-transition="pop">ถูกทั้ง 2 ข้อ </a></li>
+    <li><a href="wrong.html" data-rel="dialog" data-transition="pop">ไม่มีข้อใดถูก</a></li>
+  	</ol>
+    </div>
+    </div><!-- /content -->
+
+</div><!-- /page -->
+
+</body>
+</html>

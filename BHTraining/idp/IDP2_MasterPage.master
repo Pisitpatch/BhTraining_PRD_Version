@@ -1,0 +1,116 @@
+﻿<%@ Master Language="VB" CodeFile="IDP2_MasterPage.master.vb" Inherits="idp_IDP2_MasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> Nursing Clinical Ladder : Bumrungrad Information System</title>
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
+<link href="../css/popup.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/jquery-1.4.2.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="../js/akmodal/dimmer.js"></script>
+<script type="text/javascript" src="../js/akmodal/dimensions.pack.js"></script>
+<script type="text/javascript" src="../js/akmodal/akModal.js"></script>
+ <script type="text/javascript" src="../js/check_session.js" charset="utf-8"></script>
+ <script type ="text/javascript">
+     my_window = null;
+     function check() {
+         if (my_window && !my_window.closed)
+             my_window.focus();
+     }
+ </script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onclick="check();"  >
+    <form id="form1" runat="server">
+    <div id="pageheader"><a href="../menu.aspx"><img src="../images/Bumrungrad-Hospital-Logo.gif" border="0" alt="logo" width="196" height="82" /></a></div>
+<div id="topbar"><table width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="30"><div  id="topmenu"><div style="color:White">Login :  
+        <asp:Label ID="lblInfo" runat="server" Text="x"></asp:Label>
+        <strong>Department</strong>  <asp:Label ID="lblDeptName" runat="server" Text="x"></asp:Label>
+         <strong>Cost Center</strong>  <asp:Label ID="lblCostcenter" runat="server" Text="x"></asp:Label>
+        </div>
+    </div></td>
+    <td width="150" align="right">
+        <asp:LinkButton ID="linkLogout" runat="server">Log out >></asp:LinkButton>&nbsp;&nbsp;</td>
+  </tr>
+</table>
+
+</div>
+<div class="spacer"></div>
+<div id="pathway"><asp:SiteMapPath ID="SiteMapPath1" runat="server"   >  </asp:SiteMapPath></div>
+   <div id="container">
+   
+   <div id="Div1">
+  <table width="100%" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="180" valign="top">
+      <div class="sidemenu" id="panel_user" runat="server" >
+          <ul>
+            <li style="border-top: none;"><strong>Nursing Clinical Ladder</strong></li>
+          
+              <li><a href="home.aspx?flag=ladder">- My Nursing Clinical Ladder </a></li>
+          
+          
+          </ul>
+           <br />
+           
+        </div>
+       
+        <div class="sidemenu" id="panel_educator" runat="server">
+             <ul>
+             
+            
+            <li ><strong>Nursing Educator</strong></li>
+               
+                <li><a href="home.aspx?viewtype=educator&flag=ladder&formtype=1">-Review Adjusted Level</a></li>
+               <li><a href="home.aspx?viewtype=educator&flag=ladder&formtype=2">-Review Maintained Level</a></li>
+            </ul>
+             <br />
+        </div>
+       
+       
+          <div  class="sidemenu" id="panel_hr" runat="server">
+            <ul>
+              <li style="border-top: none;"><strong>Clinical Ladder Coordinator </strong></li>
+                 <li><a href="idp_master.aspx?viewtype=hr&flag=ladder">-Clinical Ladder Topic</a></li>
+               <li><a href="idp_template_list.aspx?viewtype=hr&flag=ladder">-Clinical Ladder Form</a></li>
+                  <li><a href="home.aspx?viewtype=hr&flag=ladder&formtype=1">- Review Adjusted Level</a></li>
+           <li><a href="home.aspx?viewtype=hr&flag=ladder&formtype=2">- Review Maintain Level</a></li>
+             <li><a href="report_ladder.aspx">- Report</a></li>
+            </ul>
+             <br />
+          </div>
+         
+        
+
+        <div class="sidemenu" id="panel_manager" runat="server">
+          <ul>
+              <li style="border-top: none;"><strong>Sup/Mgr/Dept Mgr/DD/Chief</strong></li>
+           
+              <li><a href="home.aspx?viewtype=dept&flag=ladder&formtype=1">- Review Nursing Clinical Ladder (Adjusted Level)</a></li>
+              <li><a href="home.aspx?viewtype=dept&flag=ladder&formtype=2">- Review Nursing Clinical Ladder (Maintain Level)</a></li>
+            </ul>
+        </div>
+    
+       
+      
+        <br /></td>
+      <td align="center" valign="top"> 
+       <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">  
+        </asp:ContentPlaceHolder>   
+      
+       </td>
+    </tr>
+  </table>
+</div>
+
+  
+        
+    </div>
+    <div id="footer"></div>
+    <div id="backgroundPopup"></div>
+    </form>
+</body>
+</html>

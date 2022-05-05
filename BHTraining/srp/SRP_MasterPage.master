@@ -1,0 +1,102 @@
+﻿<%@ Master Language="VB" CodeFile="SRP_MasterPage.master.vb" Inherits="srp_SRP_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>On The Spot : Bumrungrad Information System</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../css/main_shop.css" rel="stylesheet" type="text/css" />
+        <link href="../css/popup.css" rel="stylesheet" type="text/css" />
+   <script type="text/javascript" src="../js/jquery-1.6.min.js" charset="utf-8"></script>
+   <script type="text/javascript" src="../js/check_session.js" charset="utf-8"></script>
+ <script type ="text/javascript">
+     my_window = null;
+     function check() {
+         if (my_window && !my_window.closed)
+             my_window.focus();
+     }
+ </script>
+
+     
+     <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="pageheader"><a href="../menu.aspx"><img src="../images/Bumrungrad-Hospital-Logo.gif" border="0" alt="logo" width="196" height="82" /></a></div>
+<div id="topbar"><table width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="30"><div  id="topmenu"><div style="color:White">Login :  
+        <asp:Label ID="lblInfo" runat="server" Text="x"></asp:Label>
+        <strong>Department</strong>  <asp:Label ID="lblDeptName" runat="server" Text="x"></asp:Label>
+         <strong>Cost Center</strong>  <asp:Label ID="lblCostcenter" runat="server" Text="x"></asp:Label>
+        </div>
+    </div></td>
+    <td width="150" align="right">
+        <asp:LinkButton ID="linkLogout" runat="server" CausesValidation="False">Log out >></asp:LinkButton>&nbsp;&nbsp;</td>
+  </tr>
+</table>
+
+</div>
+<div class="spacer"></div>
+<div id="pathway"><asp:SiteMapPath ID="SiteMapPath1" runat="server">  </asp:SiteMapPath></div>
+   <div id="container">
+   
+   <div id="Div1">
+  <table width="100%" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="180" valign="top">
+      <div class="sidemenu" id="panel_user" runat="server" >
+          <ul>
+            <li style="border-top: none;"><a href="#"><strong>Staff Recognition Program</strong></a></li>
+         
+            <li><a href="srp_message.aspx">- News</a></li>
+                 <li><a href="srp_mission.aspx">- Vision /  Mission Statement</a></li>
+             <li><a href="srp_contact.aspx">- Contact us / Suggestion</a></li>
+              <li><a href="srp_point_list.aspx">- Point Checking</a></li>
+               <li><a href="srp_shop.aspx">- Online Shop Catalog</a></li>
+               <li><a href="srp_self_register.aspx">- On the Spot Card Register</a></li>
+          </ul>
+        </div>
+        <br />
+        <div class="sidemenu" id="panel_hr" runat="server">
+          <ul>
+            <li style="border-top: none;"><a href="javascript:;"><strong>SRP Coordinator</strong></a></li>
+        <!--    <li><a href="srp_register.aspx">- On the Spot Card Register</a></li> 
+        <li><a href="srp_reserve.aspx">- On the Spot Reservation Items</a></li>-->
+         <li><a href="srp_issue.aspx">- On the Spot Card Issue</a></li>
+               
+                 <li><a href="srp_quota.aspx">- On the Spot Card Quota</a></li>
+              <li><a href="srp_import.aspx">- SRP Point Adjustment</a></li>
+               <li><a href="srp_master.aspx">- Setting</a></li>
+                <li><a href="srp_report.aspx">- SRP Report</a></li> 
+             
+          </ul>
+        </div>
+        <br />
+           <div class="sidemenu" id="panel_dept" runat="server">
+           <ul>
+            <li style="border-top: none;"><a href="javascript:;"><strong>Special Card Issue Approval</strong></a></li>
+            <li><a href="srp_issue.aspx?viewtype=dept">- On the Spot Card Issue</a></li>
+            
+          </ul>
+           </div>
+  
+           <br />
+</td>
+      <td align="center" valign="top"> 
+       <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">  
+        </asp:ContentPlaceHolder>   
+      
+       </td>
+    </tr>
+  </table>
+</div>
+    </div>
+      <div id="backgroundPopup"></div>
+    <div id="footer"></div>
+
+    </form>
+</body>
+</html>

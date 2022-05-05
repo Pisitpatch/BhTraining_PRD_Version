@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<verticalBarsChart>
+<config>
+<chartarea x="45" y="75" width="400" height="180" backColor1="0xFDFDFD" backColor2="0xECECEC" bottomColor="0xD9D9D9" zeroColor="0xD9D9D9" zeroAlpha="0.8" xMargin="5" borderColor="0xcccccc" borderThick="2" borderAlpha="1" wDepth="15" hDepth="10" />
+<yaxis tagSize="13" tagColor="0x5e7086" tagMargin="3" min="0" max="500" intervals="5" decimals="0" />
+<xaxis tagSize="13" tagColor="0x5e7086" tagMargin="1" periodMargin="0.2" barMargin="0.2" />
+<gridlines thick="1" color="0xcccccc" alpha="0.8" />
+<legends visible="true" x="480" y="65" width="100" square="10" textSize="13" textColor="0x000000" backColor="0xFFFFFF" backAlpha="1" borderColor="0xcccccc" borderThick="1" borderAlpha="1" legendBackColor="0xf2f2f2" />
+<tooltip size="13" xmargin="2" ymargin="0" />
+<animation openTime="1" synchronized="false" />
+</config>
+<texts>
+<paragraph align="center" bold="true" color="0x000066" size="16" x="45" y="10" width="500" text="Incident Report by Risk Level" />
+<paragraph align="center" bold="false" color="0x000066" size="14" x="45" y="30" width="500" text="Total Number of Incident Report by Risk Level" />
+<paragraph align="center" bold="true" color="0x5e7086" size="13" x="8" y="40" width="50" text="Values" />
+<paragraph align="center" bold="true" color="0x5e7086" size="13" x="45" y="280" width="400" text="Month" />
+</texts>
+<series>
+<serie borderColor="0xbd7400" lightColor="0xffde00" darkColor="0xbd7400" tooltipBackColor="0xe6b600" tooltipTextColor="0x000000" name="Insignificant" />
+<serie borderColor="0x425802" lightColor="0xc1d681" darkColor="0x425802" tooltipBackColor="0x93a853" tooltipTextColor="0xFFFFFF" name="Near Miss" />
+<serie borderColor="0x076984" lightColor="0x40cff6" darkColor="0x06a2cc" tooltipBackColor="0xe0323c" tooltipTextColor="0xFFFFFF" name="No Harm" />
+<serie borderColor="0x5e2c8d" lightColor="0x9872bb" darkColor="0x562e7b"  tooltipBackColor="0xe0323c" tooltipTextColor="0xFFFFFF" name="Mild AE" />
+<serie borderColor="0xb3036b" lightColor="0xf758b6" darkColor="0xd60380" tooltipBackColor="0xe0323c" tooltipTextColor="0xFFFFFF" name="Moderate AE" />
+<serie borderColor="0xa03f11" lightColor="0xe87037" darkColor="0xdc4e0a" tooltipBackColor="0xe0323c" tooltipTextColor="0xFFFFFF" name="Serious AE" />
+<serie borderColor="0x700408" lightColor="0xf03a45" darkColor="0x700408" tooltipBackColor="0xe0323c" tooltipTextColor="0xFFFFFF" name="Sentinel Event" />
+</series>
+<periods>
+<period name="Jan">
+<v>191</v><v>71</v><v>608</v><v>108</v><v>25</v><v>0</v><v>0</v></period>
+<period name="Feb">
+<v>167</v><v>68</v><v>555</v><v>107</v><v>16</v><v>0</v><v>0</v></period>
+<period name="Mar">
+<v>182</v><v>101</v><v>697</v><v>127</v><v>20</v><v>0</v><v>0</v></period>
+<period name="Apr">
+<v>192</v><v>74</v><v>633</v><v>99</v><v>8</v><v>0</v><v>0</v></period>
+<period name="May">
+<v>181</v><v>89</v><v>493</v><v>99</v><v>24</v><v>0</v><v>0</v></period>
+<period name="Jun">
+<v>13</v><v>11</v><v>31</v><v>12</v><v>7</v><v>0</v><v>0</v></period>
+</periods>
+</verticalBarsChart>

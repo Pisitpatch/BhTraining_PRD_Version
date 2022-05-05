@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lineChart>
+<config>
+<chartarea x="0" y="30" width="500" height="220" backColor1="0xfafafa" backColor2="0xf1f1f1" xMargin="15" yMargin="15" borderColor="0xbdbdbd" borderThick="2" borderAlpha="1" />
+<yaxis tagSize="8" tagColor="0x587b8c" tagMargin="3" min="0" max="90" intervals="5" decimals="1" />
+<xaxis tagSize="8" tagColor="0x587b8c" tagMargin="1" />
+<gridlines thick="1" color="0xcdcdcd" alpha="0.8" />
+<legends visible="true" x="520" y="30" width="110" square="10" textSize="10" textColor="0x5e7086" backColor="0xFFFFFF" backAlpha="1" borderColor="0x587b8c" borderThick="1" borderAlpha="1" legendBackColor="0xf2f2f2" />
+<points radius="3" />
+<tooltip size="10" xmargin="2" ymargin="0" />
+<animation openTime="0.5" moveTime="0.5" synchronized="false" />
+</config>
+<texts>
+<paragraph align="center" bold="true" color="0x000066" size="10" x="25" y="10" width="500" text="Total Number of Incident Report By Service Type" />
+<paragraph align="center" bold="false" color="0x000066" size="10" x="25" y="270" width="500" text="From 30 March 2022 to 29 April 2022"  />
+</texts>
+<series>
+<serie lineColor="0x00AA00" thick="1" pointInteriorColor="0x55FF55" pointBorderColor="0x00AA00" tooltipBackColor="0x55FF55" tooltipTextColor="0x000000" name="OPD" />
+<serie lineColor="0xf99d39" thick="1" pointInteriorColor="0xfbc891" pointBorderColor="0xf99d39" tooltipBackColor="0xfbc891" tooltipTextColor="0x000000" name="IPD" />
+<serie lineColor="0x000066" thick="1" pointInteriorColor="0x000099" pointBorderColor="0x000066" tooltipBackColor="0x0000AA" tooltipTextColor="0xFFFFFF" name="Other" />
+<serie lineColor="0xDD0000" thick="2" pointInteriorColor="0xFF3333" pointBorderColor="0xDD0000" tooltipBackColor="0xFF3333" tooltipTextColor="0xFFFFFF" name="Total IR" />
+</series>
+<periods>
+<period name="30">
+<v>6</v>
+<v>9</v>
+<v>0</v>
+<v>15</v>
+</period>
+<period name="31">
+<v>9</v>
+<v>10</v>
+<v>2</v>
+<v>21</v>
+</period>
+<period name="1">
+<v>8</v>
+<v>19</v>
+<v>0</v>
+<v>27</v>
+</period>
+<period name="2">
+<v>6</v>
+<v>15</v>
+<v>0</v>
+<v>21</v>
+</period>
+<period name="3">
+<v>11</v>
+<v>7</v>
+<v>0</v>
+<v>18</v>
+</period>
+<period name="4">
+<v>8</v>
+<v>16</v>
+<v>0</v>
+<v>24</v>
+</period>
+<period name="5">
+<v>9</v>
+<v>19</v>
+<v>0</v>
+<v>28</v>
+</period>
+<period name="6">
+<v>12</v>
+<v>14</v>
+<v>2</v>
+<v>28</v>
+</period>
+<period name="7">
+<v>8</v>
+<v>11</v>
+<v>2</v>
+<v>21</v>
+</period>
+<period name="8">
+<v>11</v>
+<v>13</v>
+<v>0</v>
+<v>24</v>
+</period>
+<period name="9">
+<v>9</v>
+<v>15</v>
+<v>1</v>
+<v>25</v>
+</period>
+<period name="10">
+<v>9</v>
+<v>16</v>
+<v>2</v>
+<v>27</v>
+</period>
+<period name="11">
+<v>7</v>
+<v>11</v>
+<v>3</v>
+<v>21</v>
+</period>
+<period name="12">
+<v>14</v>
+<v>8</v>
+<v>1</v>
+<v>23</v>
+</period>
+<period name="13">
+<v>12</v>
+<v>13</v>
+<v>1</v>
+<v>26</v>
+</period>
+<period name="14">
+<v>5</v>
+<v>7</v>
+<v>1</v>
+<v>13</v>
+</period>
+<period name="15">
+<v>5</v>
+<v>8</v>
+<v>2</v>
+<v>15</v>
+</period>
+<period name="16">
+<v>7</v>
+<v>15</v>
+<v>0</v>
+<v>22</v>
+</period>
+<period name="17">
+<v>5</v>
+<v>6</v>
+<v>0</v>
+<v>11</v>
+</period>
+<period name="18">
+<v>13</v>
+<v>14</v>
+<v>0</v>
+<v>27</v>
+</period>
+<period name="19">
+<v>7</v>
+<v>14</v>
+<v>2</v>
+<v>23</v>
+</period>
+<period name="20">
+<v>15</v>
+<v>23</v>
+<v>1</v>
+<v>39</v>
+</period>
+<period name="21">
+<v>17</v>
+<v>13</v>
+<v>2</v>
+<v>32</v>
+</period>
+<period name="22">
+<v>11</v>
+<v>19</v>
+<v>0</v>
+<v>30</v>
+</period>
+<period name="23">
+<v>10</v>
+<v>18</v>
+<v>2</v>
+<v>30</v>
+</period>
+<period name="24">
+<v>3</v>
+<v>14</v>
+<v>2</v>
+<v>19</v>
+</period>
+<period name="25">
+<v>7</v>
+<v>15</v>
+<v>1</v>
+<v>23</v>
+</period>
+<period name="26">
+<v>9</v>
+<v>17</v>
+<v>0</v>
+<v>26</v>
+</period>
+<period name="27">
+<v>16</v>
+<v>9</v>
+<v>3</v>
+<v>28</v>
+</period>
+<period name="28">
+<v>12</v>
+<v>18</v>
+<v>3</v>
+<v>33</v>
+</period>
+<period name="29">
+<v>1</v>
+<v>1</v>
+<v>1</v>
+<v>1</v>
+</period>
+</periods>
+</lineChart>
