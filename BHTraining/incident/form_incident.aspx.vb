@@ -7923,20 +7923,55 @@ Namespace incident
                     Throw New Exception(errorMsg)
                 End If
 
-                conn.setDBCommit()
+                '### New Code add data to log book
 
+                sql = "SELECT ISNULL(MAX(order_sort),0) + 1 FROM ir_tqm_cause_list WHERE ir_id = " & irId
+                ds = conn.GetDataSetForTransaction(sql, "t0")
+                new_order_sort = ds.Tables("t0").Rows(0)(0).ToString
+
+                'sql = "INSERT INTO ir_tqm_cause_list (ir_id , cause_id , cause_name , cause_remark , ir_type  , dept_unit_name , dept_unit_id , order_sort) VALUES("
+                sql = "INSERT INTO ir_tqm_cause_list (ir_id , cause_id , cause_name , cause_remark , ir_type  , order_sort) VALUES("
+                sql &= "" & irId & " ,"
+                sql &= "'" & txtcause_dept.SelectedValue & "' ,"
+                sql &= "'" & txtcause_dept.SelectedItem.Text & "' ,"
+                sql &= "'" & addslashes(txttqm_addremark_dept.Text) & "' ,"
+                sql &= "'ir' ,"
+                'sql &= "'" & addslashes(txtadd_cause_defendant.SelectedItem.Text) & "' ,"
+                'sql &= "'" & txtadd_cause_defendant.SelectedValue & "' ,"
+                sql &= "'" & new_order_sort & "' "
+                sql &= ")"
+
+                errorMsg = conn.ExecuteSQLForTransaction(sql)
+                If errorMsg <> "" Then
+                    Throw New Exception(errorMsg)
+                End If
+
+                '### 
+                conn.SetDBCommit()
                 ' txttqm_addremark_dept.Text = ""
                 'txtcause_dept.SelectedIndex = 0
 
                 bindDeptGridCause()
+                bindTQMGridCause()
             Catch ex As Exception
+                WriteLog("Error ::" + ex.Message)
                 conn.setDBRollback()
                 Response.Write(ex.Message)
+                Throw ex
             Finally
                 ds.Dispose()
             End Try
         End Sub
 
+        Private Sub WriteLog(inString As String)
+            Dim fileName As String = "D:\Logs\BhTraing_Log.txt"
+            If (File.Exists(fileName) = False) Then
+                File.Open(fileName, FileMode.Append)
+            End If
+
+            File.WriteAllText(fileName, "[" + DateTime.Now.ToString() + "]" + inString)
+
+        End Sub
         Protected Sub GridDeptCause_RowDeleting(sender As Object, e As GridViewDeleteEventArgs) Handles GridDeptCause.RowDeleting
             Dim sql As String
             Dim result As String

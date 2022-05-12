@@ -1569,7 +1569,8 @@ ErrorMessage="กรุณาระบุอายุเป็นตัวเล
                <ItemStyle Width="60px" HorizontalAlign="Center" />
                    <ItemTemplate>
                        <asp:Label ID="lblPk" runat="server" Text='<%# bind("tqm_cause_id") %>' Visible="false"></asp:Label>
-                       <asp:TextBox ID="txtorder" runat="server"  Width="50px" Text='<%# bind("order_sort") %>'></asp:TextBox>
+                       <asp:Label ID="Label12" runat="server" Text='<%#Bind("order_sort") %>' Visible="true"></asp:Label>
+                       <%--<asp:TextBox ID="txtorder" runat="server"  Width="50px" Text='<%# bind("order_sort") %>'></asp:TextBox>--%>
                    </ItemTemplate>
                </asp:TemplateField>
                <asp:BoundField DataField="cause_name" 

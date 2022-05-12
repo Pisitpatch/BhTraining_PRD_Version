@@ -1,4 +1,5 @@
 ﻿Imports System.Data
+Imports BHTraining.QueryStringEncryption
 Imports QueryStringEncryption
 Imports ShareFunction
 
@@ -25,10 +26,10 @@ Partial Class login
         End If
 
         'Response.Write("xxx : " & redirect & "<br/>")
-       
+
 
         ' Response.Write(redirect)
-        If conn.setConnection Then
+        If conn.SetConnection Then
 
         Else
             Response.Write("Connection Error")
@@ -52,7 +53,7 @@ Partial Class login
     Protected Sub Page_LoadComplete(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.LoadComplete
         Try
             ' response.write("close connnection")
-            conn.closeSql()
+            conn.CloseSql()
             conn = Nothing
         Catch ex As Exception
             Response.Write(ex.Message)
@@ -71,7 +72,7 @@ Partial Class login
             sql = "UPDATE user_profile SET user_password = '" & token.Trim & "' "
             sql &= " WHERE emp_code <> 62752 "
 
-            errorMsg = conn.executeSQL(sql)
+            errorMsg = conn.ExecuteSQL(sql)
             If errorMsg <> "" Then
                 Throw New Exception(errorMsg)
             End If
@@ -100,7 +101,7 @@ Partial Class login
 
         Try
             sql = "SELECT * FROM user_profile WHERE user_login = '" & txtusername.Text & "'"
-            ds = conn.getDataSet(sql, "t1")
+            ds = conn.GetDataSet(sql, "t1")
             If ds.Tables("t1").Rows.Count > 0 Then
                 password = ds.Tables("t1").Rows(0)("user_password").ToString
                 If password = txtpassword.Text Then
@@ -113,7 +114,7 @@ Partial Class login
                 End If
             Else
                 sql = "SELECT * FROM m_doctor WHERE emp_no = '" & txtusername.Text & "'"
-                ds = conn.getDataSet(sql, "t2")
+                ds = conn.GetDataSet(sql, "t2")
                 If ds.Tables("t2").Rows.Count > 0 Then
                     ' password = ds.Tables("t2").Rows(0)("user_password").ToString
                     setSession(ds.Tables("t2").Rows(0)("emp_no").ToString, ds.Tables("t2").Rows(0)("doctor_name_en").ToString, "0", ds.Tables("t2").Rows(0)("specialty").ToString, ds.Tables("t2").Rows(0)("specialty").ToString, ds.Tables("t2").Rows(0)("specialty").ToString, ds.Tables("t2").Rows(0)("specialty").ToString)
@@ -197,7 +198,7 @@ Partial Class login
             Try
                 If is_normal_user = 1 Then
                     sql = "SELECT * FROM user_profile a INNER JOIN user_dept b ON a.costcenter_id = b.dept_id WHERE LOWER(a.bh_username) = '" & txtusername.Text.ToLower & "'"
-                    ds = conn.getDataSet(sql, "t1")
+                    ds = conn.GetDataSet(sql, "t1")
                     emp_code = ds.Tables(0).Rows(0)("emp_code").ToString
                     displayName = ds.Tables(0).Rows(0)("user_fullname").ToString
                     If Trim(displayName) = "" Then
@@ -210,7 +211,7 @@ Partial Class login
                     job_title = ds.Tables(0).Rows(0)("job_title").ToString
                 Else
                     sql = "SELECT * FROM m_doctor WHERE LOWER(bh_username) = '" & txtusername.Text.ToLower & "'"
-                    ds = conn.getDataSet(sql, "t1")
+                    ds = conn.GetDataSet(sql, "t1")
                     emp_code = ds.Tables(0).Rows(0)("emp_no").ToString
                     displayName = ds.Tables(0).Rows(0)("doctor_name_en").ToString
                     'dept_id = ds.Tables(0).Rows(0)("dept_id").ToString
@@ -230,7 +231,7 @@ Partial Class login
             Finally
                 ds.Dispose()
             End Try
-           
+
 
             If redirect = "" Then
                 Response.Redirect("menu.aspx")
@@ -263,7 +264,7 @@ Partial Class login
         Dim ds As New DataSet
 
         sql = "SELECT * FROM user_access_costcenter WHERE emp_code = " & Session("emp_code").ToString
-        ds = conn.getDataSet(sql, "tCos")
+        ds = conn.GetDataSet(sql, "tCos")
         If ds.Tables("tCos").Rows.Count > 0 Then
             Dim costcenter_list() As String
             ReDim costcenter_list(ds.Tables("tCos").Rows.Count)
@@ -274,7 +275,7 @@ Partial Class login
             Session("costcenter_list") = costcenter_list
         Else
             sql = "SELECT * FROM doctor_access_costcenter WHERE emp_code = " & Session("emp_code").ToString
-            ds = conn.getDataSet(sql, "tDocCenter")
+            ds = conn.GetDataSet(sql, "tDocCenter")
             If ds.Tables("tDocCenter").Rows.Count > 0 Then
                 Dim costcenter_list() As String
                 ReDim costcenter_list(ds.Tables("tDocCenter").Rows.Count)
@@ -288,7 +289,7 @@ Partial Class login
         End If
 
         sql = "SELECT * FROM user_role WHERE emp_code = " & Session("emp_code").ToString
-        ds = conn.getDataSet(sql, "t2")
+        ds = conn.GetDataSet(sql, "t2")
         If ds.Tables("t2").Rows.Count > 0 Then
             Dim priv() As String
             ReDim priv(ds.Tables("t2").Rows.Count)
@@ -299,7 +300,7 @@ Partial Class login
             Session("priv_list") = priv
         Else
             sql = "SELECT * FROM doctor_role WHERE emp_code = " & Session("emp_code").ToString
-            ds = conn.getDataSet(sql, "t22")
+            ds = conn.GetDataSet(sql, "t22")
             If ds.Tables("t22").Rows.Count > 0 Then
                 Dim priv() As String
                 ReDim priv(ds.Tables("t22").Rows.Count)
@@ -314,7 +315,7 @@ Partial Class login
         End If
 
         sql = "SELECT * FROM user_module WHERE emp_code = " & Session("emp_code").ToString
-        ds = conn.getDataSet(sql, "t3")
+        ds = conn.GetDataSet(sql, "t3")
         If ds.Tables("t3").Rows.Count > 0 Then
             Dim module_list() As String
             ReDim module_list(ds.Tables("t3").Rows.Count)
@@ -325,7 +326,7 @@ Partial Class login
             Session("mobule_list") = module_list
         Else
             sql = "SELECT * FROM doctor_module WHERE emp_code = " & Session("emp_code").ToString
-            ds = conn.getDataSet(sql, "t4")
+            ds = conn.GetDataSet(sql, "t4")
             If ds.Tables("t4").Rows.Count > 0 Then
                 Dim module_list() As String
                 ReDim module_list(ds.Tables("t4").Rows.Count)
@@ -348,13 +349,13 @@ Partial Class login
         Dim newuser As Boolean = False
         Try
             sql = "SELECT * FROM user_profile WHERE LOWER(RTRIM(LTRIM(bh_username))) = '" & username.ToLower & "'"
-            ds = conn.getDataSet(sql, "t1")
+            ds = conn.GetDataSet(sql, "t1")
             If ds.Tables(0).Rows.Count > 0 Then
                 newuser = False
                 is_normal_user = 1
             Else
                 sql = "SELECT * FROM m_doctor WHERE LOWER(bh_username) = '" & username.ToLower & "'"
-                ds = conn.getDataSet(sql, "t2")
+                ds = conn.GetDataSet(sql, "t2")
                 If ds.Tables("t2").Rows.Count > 0 Then
                     newuser = False
                     is_normal_user = 0 ' ไม่ใช่ user ทั่วไป
